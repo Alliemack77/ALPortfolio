@@ -14,8 +14,14 @@
     --bg-white: #fff;
     --bg-rose: #E3D2D2;
     --bg-blue: #3C3E61;
-    --bg-coral: #ffaca9df;
+    --bg-coral: #ffaca9;
     --clr-primary: #333333;
+/* 
+    --bg-white: #fff;
+    --bg-rose: #fae4ffb9;
+    --bg-blue: #000429;
+    --bg-coral: #ffee90;
+    --clr-primary: #333333; */
 
     /* Typography */
     /* --font-primary: 'Exo', sans-serif; */
@@ -88,6 +94,7 @@ a {
     /* background: var(--bg-light); */
     background: var(--bg-rose);
 }
+
 .bg-dark {
     /* background: var(--bg-dark); */
     background: var(--bg-blue);
@@ -233,7 +240,7 @@ header {
 @media (min-width: 768px) {
 
     body {
-        /* padding: 0 1.25em; */
+        padding: 4.5em 1.25em;
         max-width: 1375px;
         margin: 0 auto;
         /* border: solid 2px #3333; */
