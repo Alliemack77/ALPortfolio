@@ -12,7 +12,7 @@
     --clr-primary: #333333; */
 
     --bg-white: #fff;
-    --bg-rose: #E3D2D2;
+    --bg-rose: #e3d2d24f;
     --bg-blue: #3C3E61;
     --bg-coral: #ffaca9;
     --clr-primary: #333333;
@@ -24,7 +24,7 @@
     --clr-primary: #333333; */
 
     /* Typography */
-    /* --font-primary: 'Exo', sans-serif; */
+    
     --font-primary: 'Montserrat', sans-serif;
     --font-secondary: 'Great Vibes', cursive;
     
@@ -109,16 +109,16 @@ a {
 }
 
 .btn {
-    font-size: 1.25rem;
+    font-size: clamp(.85rem, 1.5vw, 1rem);
     font-weight: var(--fw-bold);
     color: var(--clr-primary);
     text-transform: uppercase;
     position: relative;
 }
 
-.btn + .btn {
+/* .btn + .btn {
     margin-left: 1em;
-}
+} */
 
 .contact-link {
     color: var(--clr-primary);
@@ -162,6 +162,9 @@ header {
     margin-top: 1.25em;
 }
 
+
+
+/* Main */
 .card-img {
     padding: 2.5em 1em ;
 }
@@ -179,6 +182,12 @@ header {
 
     font-size: var(--fs-card-title);
     font-weight: var(--fw-card-title);
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
 }
 
 /** Contact **/
@@ -240,7 +249,10 @@ header {
 @media (min-width: 768px) {
 
     body {
-        padding: 4.5em 1.25em;
+        /* padding: 0 1.25em; */
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
         max-width: 1375px;
         margin: 0 auto;
         /* border: solid 2px #3333; */
@@ -277,6 +289,7 @@ header {
         display: grid;
         grid-template-columns: repeat(3, minmax(150px, 1fr));
         grid-template-rows: repeat(5, 1fr);
+        gap: 1em;
     }
 
     .card-img.hive {
@@ -302,6 +315,7 @@ header {
     footer.grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 1em;
         
     }
 }
