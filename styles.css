@@ -116,10 +116,6 @@ a {
     position: relative;
 }
 
-/* .btn + .btn {
-    margin-left: 1em;
-} */
-
 .contact-link {
     color: var(--clr-primary);
     font-weight: var(--fw-bold);
@@ -151,7 +147,6 @@ a {
 /** Header **/
 header {
     padding: 4em .5em;
-    
 }
 
 .subtitle {
@@ -178,8 +173,6 @@ header {
 }
 
 .card-title {
-    /* font-family: var(--font-secondary); */
-
     font-size: var(--fs-card-title);
     font-weight: var(--fw-card-title);
 }
@@ -189,6 +182,8 @@ header {
     justify-content: center;
     gap: 1em;
 }
+
+
 
 /** Contact **/
 .contact {
@@ -245,6 +240,7 @@ header {
 }
 
 
+
 /** Grid **/
 @media (min-width: 768px) {
 
@@ -282,7 +278,7 @@ header {
         height: 100%;
         width: 100%;
         object-fit: cover;
-        /* border: solid black 2px; */
+        border: solid #333333 2px;
     }
 
     .main-grid {
@@ -309,6 +305,11 @@ header {
     .main-grid :nth-child(12) {
         grid-row: 4 / 5;
         grid-column: 2 /3;
+    }
+
+    .main-grid :nth-child(5) {
+        
+        background: #8487b6;
     }
 
     header.grid, 
