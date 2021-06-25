@@ -1,0 +1,279 @@
+/** Custom Variables **/
+:root {
+    /* Colors */
+    --bg-white: #fff;
+    --bg-light: #f3d3c76b;
+    --bg-dark: #F3D3C7;
+    --clr-primary: #000000;
+
+    /* Typography */
+    --font-primary: 'Exo', sans-serif;
+
+    /* Font Weights */
+    --fw-thin: 100;
+    --fw-cord-title: 300;
+    --fw-regular: 400;
+    --fw-bold: 700;
+
+    /* Font Sizes */
+    --fs-h1: 3.5rem;
+    --fs-h2: 1.5rem;
+    --fs-card-title: 2.25rem;
+    --fs-p: 1rem;
+}
+
+
+/** Reset **/
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+body {
+    font-family: var(--font-primary);
+    font-size: var(--fs-p);
+    color: var(--clr-primary);
+    margin: 0em;
+    line-height: 1.4;
+    text-align: center;
+}
+
+h1,
+h2,
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/** Typography **/
+.title {
+    font-size: var(--fs-h1);
+    font-weight: var(--fw-regular);
+    line-height: 1;
+}
+
+.subtitle {
+    font-size: var(--fs-h2);
+    font-weight: var(--fw-regular);
+}
+
+
+/** General Styling **/
+.bg-light {
+    background: var(--bg-light);
+}
+.bg-dark {
+    background: var(--bg-dark);
+}
+
+.bg-white {
+    background: var(--bg-white);
+}
+
+.bold {
+    font-weight: var(--fw-bold);
+}
+
+.btn {
+    font-size: 1.25rem;
+    font-weight: var(--fw-bold);
+    color: var(--clr-primary);
+    text-transform: uppercase;
+    position: relative;
+}
+
+.btn + .btn {
+    margin-left: 1em;
+}
+
+.contact-link {
+    color: var(--clr-primary);
+    font-weight: var(--fw-bold);
+    position: relative;
+}
+
+.btn::after,
+.contact-link::after {
+    content: "";
+    position: absolute;
+    height: .75em;
+    width: 95%;
+    left: -2.5%;
+    top: 45%;
+    z-index: -1;
+    background: var(--bg-dark);
+    transition: transform 175ms cubic-bezier(.37,-0.41,.69,1.54);
+    transform-origin: bottom left;
+}
+
+.btn:hover::after,
+.btn:focus::after,
+.contact-link:hover::after,
+.contact-link:focus::after {
+  transform: scale(1.12, 1.85);
+}
+
+
+/** Header **/
+header {
+    padding: 4em 1em;
+}
+
+.subtitle {
+    margin-top: .5em;
+}
+
+.subtitle-secondary {
+    margin-top: 1.25em;
+}
+
+.card-img {
+    padding: 2.5em 1em ;
+}
+
+.card-body{
+    padding: 0 1em 3em 1em;
+}
+
+.card-body > * + * {
+    margin-top: 1.5em;
+}
+
+.card-title {
+    font-size: var(--fs-card-title);
+    font-weight: var(--fw-card-title);
+}
+
+/** Contact **/
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5em;
+    padding: 10em 4.5em 4.5em 4.5em;
+}
+
+.icons {
+    display: flex;
+    gap: 3.25rem;
+    font-size: 2rem;
+}
+
+.icon-link {
+    color: black;
+    transform-origin: center;
+}
+
+.icon-link:visited {
+    color: black;
+}
+
+.icon-link:hover,
+.icon-link:focus {
+    transform: scale(1.5);
+}
+
+.contact-title {
+    position: relative;
+    display: inline-block;
+    font-size: clamp(2rem, 2.5vw, 2rem);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.contact-title::after {
+    position: absolute;
+    content: "";
+    height: 2.5%;
+    display: block;
+    background: black;
+    width: 125%;
+    left: 50%;
+    transform: translate(-50%);
+    top: 50;
+}
+
+.signature {
+    padding: 1em 0 2em 0;
+}
+
+
+/** Grid **/
+@media (min-width: 768px) {
+
+    body {
+        padding: 0 1.25em;
+        max-width: 1375px;
+        margin: 0 auto;
+    }
+
+    header {
+        padding:0;
+    }
+
+    header .body {
+        padding: 10em 1em
+    }
+
+    .card-img, 
+    .card-body {
+        background: transparent;
+        padding: 0;
+        margin: 0;
+    }
+
+    .card-body {
+        align-self: center;
+        padding: 0 1em;
+    }
+
+    .card-img img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border: solid black 2px;
+    }
+
+    .main-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    .card-img.hive {
+        grid-row: 3/4;
+        grid-column: 3/4;
+    }
+
+    .card-body.hive {
+        grid-row: 3 /4;
+        grid-column: 2 /3;
+    }
+
+    .card-body.skate {
+        grid-row: 5 /6;
+        grid-column: 2 /3;
+    }
+    .main-grid :nth-child(12) {
+        grid-row: 4 / 5;
+        grid-column: 2 /3;
+    }
+
+    header.grid, 
+    footer.grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        
+    }
+}
