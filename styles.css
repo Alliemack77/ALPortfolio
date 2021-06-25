@@ -1,13 +1,27 @@
 /** Custom Variables **/
 :root {
     /* Colors */
-    --bg-white: #fff;
+    /* --bg-white: #fff;
     --bg-light: #f3d3c76b;
     --bg-dark: #F3D3C7;
-    --clr-primary: #000000;
+    --clr-primary: #333333; */
+
+    /* --bg-white: #fff;
+    --bg-light: #bad2f283;
+    --bg-dark: #091B32;
+    --clr-primary: #333333; */
+
+    --bg-white: #fff;
+    --bg-rose: #E3D2D2;
+    --bg-blue: #3C3E61;
+    --bg-coral: #ffaca9df;
+    --clr-primary: #333333;
 
     /* Typography */
-    --font-primary: 'Exo', sans-serif;
+    /* --font-primary: 'Exo', sans-serif; */
+    --font-primary: 'Montserrat', sans-serif;
+    --font-secondary: 'Great Vibes', cursive;
+    
 
     /* Font Weights */
     --fw-thin: 100;
@@ -16,7 +30,7 @@
     --fw-bold: 700;
 
     /* Font Sizes */
-    --fs-h1: 3.5rem;
+    --fs-h1: clamp(5.5rem, 6.5vw, 7.5rem);
     --fs-h2: 1.5rem;
     --fs-card-title: 2.25rem;
     --fs-p: 1rem;
@@ -71,10 +85,12 @@ a {
 
 /** General Styling **/
 .bg-light {
-    background: var(--bg-light);
+    /* background: var(--bg-light); */
+    background: var(--bg-rose);
 }
 .bg-dark {
-    background: var(--bg-dark);
+    /* background: var(--bg-dark); */
+    background: var(--bg-blue);
 }
 
 .bg-white {
@@ -112,7 +128,7 @@ a {
     left: -2.5%;
     top: 45%;
     z-index: -1;
-    background: var(--bg-dark);
+    background: var(--bg-coral);
     transition: transform 175ms cubic-bezier(.37,-0.41,.69,1.54);
     transform-origin: bottom left;
 }
@@ -127,7 +143,8 @@ a {
 
 /** Header **/
 header {
-    padding: 4em 1em;
+    padding: 4em .5em;
+    
 }
 
 .subtitle {
@@ -151,6 +168,8 @@ header {
 }
 
 .card-title {
+    /* font-family: var(--font-secondary); */
+
     font-size: var(--fs-card-title);
     font-weight: var(--fw-card-title);
 }
@@ -171,12 +190,13 @@ header {
 }
 
 .icon-link {
-    color: black;
+    color: var(--clr-primary);
     transform-origin: center;
 }
 
 .icon-link:visited {
-    color: black;
+    color: var(--clr-primary);
+
 }
 
 .icon-link:hover,
@@ -213,9 +233,10 @@ header {
 @media (min-width: 768px) {
 
     body {
-        padding: 0 1.25em;
+        /* padding: 0 1.25em; */
         max-width: 1375px;
         margin: 0 auto;
+        /* border: solid 2px #3333; */
     }
 
     header {
@@ -235,19 +256,19 @@ header {
 
     .card-body {
         align-self: center;
-        padding: 0 1em;
+        padding: 1em 1em;
     }
 
     .card-img img {
         height: 100%;
         width: 100%;
         object-fit: cover;
-        border: solid black 2px;
+        /* border: solid black 2px; */
     }
 
     .main-grid {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, minmax(150px, 1fr));
         grid-template-rows: repeat(5, 1fr);
     }
 
