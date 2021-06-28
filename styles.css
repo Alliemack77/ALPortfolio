@@ -300,6 +300,14 @@ header {
         padding: 10em 1em;
     }
 
+    
+    /* header.grid,
+    footer.grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 1em;
+    }  */
+
 
     /* Cards */
     .card-img,
@@ -321,7 +329,7 @@ header {
     }
 
 
-
+    /*  Grid */
     .main-grid {
         display: grid;
         grid-template-columns: repeat(3, minmax(150px, 1fr));
@@ -359,8 +367,6 @@ header {
         grid-row: 7 / 8;
         grid-column: 2 / 3;
     }
-
-
 
     .main-grid :nth-child(4) {
         grid-row: 2 / 3;
@@ -435,7 +441,6 @@ header {
     .deco4::after {
         top: 50%;
         left: 80%;
-        
     }
 
     /*  grid items 8 & 13 */
@@ -516,10 +521,4 @@ header {
         
     } */
 
-    /* header.grid,
-    footer.grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-        gap: 1em;
-    }  */
 }
