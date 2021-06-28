@@ -213,7 +213,7 @@ header {
     height: 2.5%;
     display: block;
     background: var(--clr-primary);
-    width: 125%;
+    width: 150%;
     left: 50%;
     transform: translate(-50%);
     top: 50;
@@ -229,11 +229,11 @@ header {
 @media (min-width: 768px) {
 
     body {
+        max-width: 1375px;
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
         gap: 3em;
-        max-width: 1375px;
-        margin: 0 auto;
     }
 
     header {
@@ -241,7 +241,7 @@ header {
     }
 
     header .body {
-        padding: 10em 1em
+        padding: 10em 1em;
     }
 
     .card-img,
@@ -256,7 +256,7 @@ header {
         padding: 1em 1em;
     }
 
-    .card-img img, 
+    .card-img img,
     .triangle {
         height: 100%;
         width: 100%;
@@ -300,10 +300,10 @@ header {
         grid-column: 3 /4;
     }
 
-    header.grid,
+    /* header.grid,
     footer.grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         gap: 1em;
-    }
+    } */
 }
