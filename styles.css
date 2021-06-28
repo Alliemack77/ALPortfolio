@@ -1,9 +1,14 @@
 /** Custom Variables **/
 :root {
     /* Colors */
-    --bg-page: #242424;
-    --bg-black: #1c1c1d;
-    --bg-pink: #4a05c8;
+    /* --bg-page: #242424;
+    --bg-drk-blue: #1c1c1d;
+    --bg-orange: #4305c8;
+    --clr-primary: #fff; */
+
+    --bg-page: #191920;
+    --bg-drk-blue: #1a1b26;
+    --bg-orange: #ff9d64d0;
     --clr-primary: #fff;
 
     /* Typography */
@@ -75,8 +80,8 @@ a {
 
 
 /** General Styling **/
-.bg-light {
-    background: var(--bg-black);
+.bg-dark {
+    background: var(--bg-drk-blue);
 }
 
 .bold {
@@ -106,7 +111,7 @@ a {
     left: -2.5%;
     top: 45%;
     z-index: -1;
-    background-color: var(--bg-pink);
+    background-color: var(--bg-orange);
     transition: transform 175ms cubic-bezier(.37,-0.41,.69,1.54);
     transform-origin: bottom left;
 }
@@ -137,12 +142,10 @@ header {
 /* Main */
 .card-img {
     padding: 2.5em 1em ;
-
 }
 
 .card-img img {
-    box-shadow: 10px 10px 50px 5px rgba(0, 0, 0, .45);
-
+    box-shadow: 10px 10px 10px 0 rgba(20, 20, 20, 0.452);
 }
 
 .card-body{
@@ -253,7 +256,8 @@ header {
         padding: 1em 1em;
     }
 
-    .card-img img {
+    .card-img img, 
+    .triangle {
         height: 100%;
         width: 100%;
         object-fit: cover;
@@ -296,10 +300,10 @@ header {
         grid-column: 3 /4;
     }
 
-    /* header.grid,
+    header.grid,
     footer.grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         gap: 1em;
-    } */
+    }
 }
