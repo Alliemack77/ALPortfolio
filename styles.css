@@ -9,7 +9,6 @@
     --font-primary: 'Montserrat', sans-serif;
     --font-secondary: 'Great Vibes', cursive;
 
-
     /* Font Weights */
     --fw-thin: 100;
     --fw-cord-title: 300;
@@ -37,8 +36,14 @@ img{
     display: block;
 }
 
+h1,
+h2,
+p {
+    margin: 0;
+}
+
 body {
-    background-color: red;
+    background-color: var(--bg-page);
     background-image: url("data:image/svg+xml,%3Csvg width='16' height='20' viewBox='0 0 16 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%231a1b26' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M8 0v20L0 10M16 0v10L8 0M16 10v10H8'/%3E%3C/g%3E%3C/svg%3E");
     font-family: var(--font-primary);
     font-size: var(--fs-p);
@@ -48,16 +53,10 @@ body {
     text-align: center;
 }
 
-h1,
-h2,
-p {
-    margin: 0;
-}
 
 a {
     text-decoration: none;
 }
-
 
 
 /** Typography **/
@@ -71,7 +70,6 @@ a {
     font-size: var(--fs-h2);
     font-weight: var(--fw-regular);
 }
-
 
 
 /** General Styling **/
@@ -121,7 +119,6 @@ a {
 
 /** Header **/
 header {
-    
     padding: 4em .5em;
 }
 
@@ -221,37 +218,17 @@ header {
 
 
 
-/** Grid **/
+/* * Grid *  */
 @media (min-width: 768px) {
 
     body {
+        /* border: solid green 2px; */
         max-width: 1375px;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
         gap: 3em;
-        position: relative;
     }
-
-    body::before,
-    body::after {
-        content: "";
-        position: absolute;
-        background: #fff;
-    }
-
-    body::before {
-        height: 3%;
-        width: .05%;
-        left: 80%;
-    }
-
-    body::after {
-        height: 5%;
-        width: .05%;
-        left: 85%;  
-    }
-
 
     /*  Header */
     header {
@@ -260,36 +237,6 @@ header {
         justify-content: center;
         align-items: center;
         padding: 0;
-        position: relative;
-    }
-
-    header::after {
-        position: absolute;
-        content: "";
-        height: 45%;
-        width: .05%;
-        left: 40%;
-        z-index: -10;
-        background: #fff;
-    }
-
-    .box {
-        content: "";
-        position: absolute;
-        height: 35%;
-        width: 40%;
-        z-index: -1;
-    }
-
-    .box::after {
-        content: "";
-        position: absolute;
-        height: .05%;
-        width: 55%;
-        left: 75%;
-        bottom: 15%;
-        z-index: -10;
-        background: rgb(255, 255, 255);
     }
 
     header .body {
@@ -297,12 +244,7 @@ header {
     }
 
     
-    /* header.grid,
-    footer.grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-        gap: 1em;
-    }  */
+  
 
 
     /* Cards */
@@ -328,193 +270,10 @@ header {
     /*  Grid */
     .main-grid {
         display: grid;
-        grid-template-columns: repeat(3, minmax(150px, 1fr));
-        grid-template-rows: repeat(8, 1fr);
-        gap: 2em;
-        position: relative;
-    }
-
-    .card-img.music {
-        grid-row: 2 / 3;
-        grid-column: 1 / 2;
-    }
-
-    .card-body.music {
-        grid-row: 2 / 3;
-        grid-column: 2 / 3;
-    }
-
-    .card-img.hive {
-        grid-row: 4 / 5;
-        grid-column: 3 / 4;
-    }
-
-    .card-body.hive {
-        grid-row: 4 / 5;
-        grid-column: 2 / 3;
-    }
-
-    .card-img.skate {
-        grid-row: 7 / 8;
-        grid-column: 1 / 2;
-    }
-
-    .card-body.skate {
-        grid-row: 7 / 8;
-        grid-column: 2 / 3;
-    }
-
-    .main-grid :nth-child(4) {
-        grid-row: 2 / 3;
-        grid-column: 3 / 4;
-    }
-
-    .main-grid :nth-child(8) {
-        grid-row: 4 / 5;
-        grid-column: 1 / 2;
-    }
-
-    .main-grid :nth-child(12) {
-        grid-row: 4 / 5;
-        grid-column: 2 / 3;
-    }
-
-    .main-grid :nth-child(13) {
-        grid-row: 5 / 6;
-        grid-column: 2 / 3;
-    }
-
-    .main-grid :nth-child(20) {
-        grid-row: 7 / 8;
-        grid-column: 3 / 4;
-    }
-
-    .main-grid :nth-child(21) {
-        grid-row: 8 / 9;
-        grid-column: 1 / 2;
-    }
-
-
-    /* Decorations */
-    .deco, 
-    .deco4, 
-    .deco8, 
-    .deco13, 
-    .deco20,
-    .deco21 {
-        position: relative;
-    }
-
-    /* grid items 1 & 4 */
-    .deco::before, 
-    .deco::after,
-    .deco4::before, 
-    .deco4::after {
-        content: "";
-        position: absolute;
-        height: 100%;
-        width: .05%;
-        background: #fff;
-    }
-
-    .deco::before {
-        top: -25%;
-        left: 10%;
-        z-index: -1;
-    }
-
-    .deco::after {
-        top: -50%;
-        left: 20%;
-    }
-
-    .deco4::before {
-        top: 25%;
-        left: 90%;
-        z-index: -1;
-    }
-
-    .deco4::after {
-        top: 50%;
-        left: 80%;
-    }
-
-    /*  grid items 8 & 13 */
-    .deco8::before, 
-    .deco8::after,
-    .deco13::before, 
-    .deco13::after {
-        content: "";
-        position: absolute;
-        background: #fff;
-    }
-
-    .deco8::before {
-        height: 75%;
-        width: .05%;
-        top: -10%;
-        left: 0%;
-    } 
-
-    .deco8::after {
-        height: .05%;
-        width: 75%;
-        top: 0%;
-        left: -10%;
-    }
-
-    
-    .deco13::before {
-        height: 75%;
-        width: .05%;
-        bottom: -10%;
-        right: 0;
-    }
-
-    .deco13::after {
-        height: .05%;
-        width: 75%;
-        bottom: 0%;
-        right: -10%; 
-    }
-
-    /* grid items 20 & 21 */
-    .deco20::before, 
-    .deco20::after,
-    .deco21::before, 
-    .deco21::after {
-        content: "";
-        position: absolute;
-        background: #fff;
-    }
-
-    .deco20::before {
-        height: 100%;
-        width: .05%;
-        top: -10%;
-        right: -10%;
-    }
-
-    .deco20::after {
-        height: .05%;
-        width: 100%;
-        bottom: -15%;
-        right: -10%;
-    }
-
-    .deco21::before {
-        height: 100%;
-        width: .05%;
-        top: -60%;
-        left: -10%;
-    }
-
-    /* .deco21::after {
-        height: 100%;
-        width: .05%;
-        top: 10%;
-        right: -10%;
         
-    } */
+        
+    }
+
+
 
 }
