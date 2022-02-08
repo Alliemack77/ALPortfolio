@@ -1,8 +1,14 @@
 
+import Navbar from './components/Navbar';
+import './scss/main.scss';
 
 function App() {
   return (
-    <h1>hello react</h1>
+    <>
+      <Navbar/>
+      <h1>This is the heading component</h1>
+    </>
+
   );
 }
 

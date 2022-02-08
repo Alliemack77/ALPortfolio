@@ -1,0 +1,6 @@
+@use '../abstracts/variables' as *;
+
+.flex {
+    display: flex;
+    gap: $gap;
+}

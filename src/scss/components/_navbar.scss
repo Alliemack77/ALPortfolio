@@ -1,0 +1,88 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/colors' as *;
+
+.primary-header {
+    // border: solid red 2px;
+    
+    padding: 1rem $p-body;
+    background: transparentize($clr-dark-blue, .25);
+
+    .logo {
+        max-width: 80px;
+    }
+
+    .flex {
+        align-items: center;
+        justify-content: space-between;
+        max-width: 87.5rem;
+        margin: 0 auto;
+
+    }
+
+}
+
+.primary-navigation {
+    // border: solid blue 2px;
+
+    @media (max-width: 35rem) {
+        position: fixed;
+        inset: 0 0 0 30%;
+        z-index: 100;
+        background: hsl(235, 18%, 17%);
+        transform: translateX(100%);
+
+        @supports (backdrop-filter: blur(1rem)) {
+            background-color: transparentize($clr-orange, .90);
+            backdrop-filter: blur(1rem);
+        }
+        
+        &.flex {
+            gap: 4rem;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding-left: 2rem;
+        }
+    }
+
+    &.underline-indicators a {
+        padding: .75rem 0;
+        border-bottom: solid transparent 4px;
+
+        &:hover, 
+        &:focus {
+            border-color: $clr-orange;
+        }
+    }
+}
+
+.mobile-nav-toggle {
+    border: solid red 2px;
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    background-image: url('../../images/hamburger.png');
+    background-repeat: no-repeat;
+    z-index: 2000;
+    top: 2rem;
+    right: 2rem;
+    width: 3rem;
+    height:3rem;
+    cursor: pointer;
+    transition: transform 250ms ease-in-out;
+
+    @media (max-width: 35rem) {
+        display: block;
+    }
+}
+
+.nav-open .primary-navigation {
+    transform: translateX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+.nav-open .mobile-nav-toggle {
+    background-image: url('../../images/hamburger-close.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}

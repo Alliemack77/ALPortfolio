@@ -1,0 +1,26 @@
+body {
+    background-color: $clr-dark-blue;
+    font-size: $fs-400;
+    color: $clr-white;
+}
+
+::-webkit-scrollbar {
+    width: .5em;
+    height: .4em;
+}
+
+::-webkit-scrollbar-track {
+    background: $clr-dark-blue;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $clr-orange;
+    border-radius: 2rem;
+}
+
+@supports (scrollbar-color: red blue) {
+    * {
+        scrollbar-color: $clr-orange $clr-dark-blue;
+    }
+}
+

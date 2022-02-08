@@ -1,0 +1,6 @@
+@use '../abstracts/variables' as *;
+
+.grid {
+    display: grid;
+    gap: $gap;
+}
