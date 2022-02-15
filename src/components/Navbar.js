@@ -27,13 +27,13 @@ const Navbar = () => {
                     <nav>
                         <ul id="primary-navigation" className="primary-navigation underline-indicators flex">
                             <li onClick={handleClick}>
-                                <a className="ff-heading" href="#">Case Studies</a>
+                                <a className="ff-heading" href="https://www.google.com/">Case Studies</a>
                             </li>
                             <li onClick={handleClick}>
-                                <a className="ff-heading" href="#">Experiments</a>
+                                <a className="ff-heading" href="https://www.google.com/">Experiments</a>
                             </li>
                             <li onClick={handleClick}>
-                                <a className="ff-heading" href="#">Contact</a>
+                                <a className="ff-heading" href="https://www.google.com/">Contact</a>
                             </li>
                         </ul>
                     </nav>
