@@ -1,0 +1,48 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/colors' as *;
+
+/* Hero */
+.hero {
+    height: 100vh;
+    display: flex;
+    gap: 6rem;
+    justify-content: space-between;
+
+    .hero-grid {
+        align-self: center;
+        display: grid;
+        max-width: 900px;
+    
+        .title {
+            grid-column: 1 / 3;
+            grid-row: 1;
+        }
+    
+        .subtitle {
+            grid-column: 1 / 3;
+            grid-row: 2;
+            margin-bottom: clamp(1rem, 3vw, 4rem);
+    
+        }
+        .button {
+            grid-column: 1;
+            grid-row: 3;
+        }
+    
+        .icon {
+            grid-column: 2 / 3;
+            grid-row: 1 / 5;
+            justify-self: end;
+            z-index: -100;
+            margin-top:-2rem;
+        }
+
+    }
+}
+
+
+
+/* Main */
+main {
+    background: $clr-offwhite;
+}

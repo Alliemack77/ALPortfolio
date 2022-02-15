@@ -1,8 +1,11 @@
 @use '../abstracts/variables' as *;
 
 .container {
-    border: solid red 2px;
-    padding: 2rem $p-body;
+    padding: 0 $p-body;
     margin-inline: auto;
     max-width: 87.5rem;
+
+    @media (min-width: 1500px) {
+        padding-inline: 0;
+    }
 }

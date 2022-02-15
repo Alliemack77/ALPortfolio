@@ -1,12 +1,13 @@
 
 import Navbar from './components/Navbar';
+import Home from './pages/Home';
 import './scss/main.scss';
 
 function App() {
   return (
     <>
       <Navbar/>
-      <h1>This is the heading component</h1>
+      <Home/>
     </>
 
   );

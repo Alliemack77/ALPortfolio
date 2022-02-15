@@ -8,7 +8,7 @@
     background: transparentize($clr-dark-blue, .25);
 
     .logo {
-        max-width: 80px;
+        max-width: 50px;
     }
 
     .flex {
@@ -57,17 +57,17 @@
 }
 
 .mobile-nav-toggle {
-    border: solid red 2px;
+    border: none;
     display: none;
     position: absolute;
     background-color: transparent;
     background-image: url('../../images/hamburger.png');
     background-repeat: no-repeat;
     z-index: 2000;
-    top: 2rem;
-    right: 2rem;
+    top: 1rem;
+    right: 1rem;
     width: 3rem;
-    height:3rem;
+    height: 3rem;
     cursor: pointer;
     transition: transform 250ms ease-in-out;
 
@@ -85,4 +85,6 @@
     background-image: url('../../images/hamburger-close.png');
     background-repeat: no-repeat;
     background-size: contain;
+    transform: rotate(180deg);
+    transition: transform 250ms ease-in-out;
 }

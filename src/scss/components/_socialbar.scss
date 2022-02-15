@@ -1,0 +1,24 @@
+@use '../abstracts/fonts' as *;
+@use '../abstracts/variables' as *;
+
+.socialbar {
+    display: none;
+    
+
+    @media (min-width: $mq-768) {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    > a {
+        font-size: $fs-600;
+        color: #575a80;
+
+        :hover,
+        :focus {
+            color: white;
+        }
+    }
+}

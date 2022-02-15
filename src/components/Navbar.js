@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import logo from '../images/logo1-small.png'
+import logo from '../images/Triangle 8.png'
 
 
 

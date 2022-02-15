@@ -1,0 +1,25 @@
+@use '../abstracts/colors' as *;
+@use '../abstracts/fonts' as *;
+@use '../abstracts/variables' as *;
+
+.button {
+    display: inline-flex;
+    max-width: max-content;
+    position: relative;
+    gap: 1rem;
+    align-items: center;
+    padding: .75rem 0;
+    border-bottom: solid 4px transparent;
+    font-family: $ff-heading;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        border-color: $clr-orange;
+    }
+
+    > svg {
+        position: absolute;
+        right: -25px;
+    }
+}
