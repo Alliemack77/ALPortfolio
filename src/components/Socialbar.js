@@ -6,16 +6,16 @@ import { AiOutlineMail } from 'react-icons/ai';
 const Socialbar = () => {
     return (
         <div className="socialbar">
-            <a href="https://github.com/Alliemack77">
+            <a href="https://github.com/Alliemack77" target="_blank" rel="noreferrer">
                 <BsGithub />
             </a>
-            <a href="www.linkedin.com/in/allisonleggett">
+            <a href="https://linkedin.com/in/allisonleggett" target="_blank" rel="noreferrer">
                 <FaLinkedinIn />
             </a>
-            {/* <a href="">
+            {/* <a href="https://codepen.io/your-work/" target="_blank" rel="noreferrer">
                 <FaCodepen />
             </a> */}
-            <a href="mailto:alliemack77@gmail.com">
+            <a href="mailto:alliemack77@gmail.com" target="_blank" rel="noreferrer">
                 <AiOutlineMail />
             </a>
         </div>

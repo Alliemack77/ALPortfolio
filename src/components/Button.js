@@ -1,8 +1,9 @@
 import { AiOutlineArrowRight } from 'react-icons/ai';
+// import { Link } from 'react-router-dom';
 
-const Button = ({text}) => {
+const Button = ({text, href}) => {
     return (
-            <a className="button" href="https://www.google.com/">
+            <a className="button" href={href}>
                 {text} 
                 <AiOutlineArrowRight />
             </a>

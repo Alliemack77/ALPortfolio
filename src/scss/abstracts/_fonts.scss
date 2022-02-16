@@ -1,6 +1,6 @@
 $fs-900: clamp(2rem, 7vw, 5.5rem);
 $fs-800: 3.5rem;
-$fs-700: 3rem;
+$fs-700: clamp(1.125rem, 6vw, 3rem);
 $fs-600: 2rem; 
 $fs-500: clamp(1rem, 3vw, 1.5rem);
 $fs-400: 1.125rem;

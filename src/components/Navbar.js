@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import logo from '../images/Triangle 8.png'
-
+import logo from '../images/logo-lrg.png'
+import { Link } from 'react-scroll';
 
 
 const Navbar = () => {
@@ -9,6 +9,7 @@ const Navbar = () => {
 
     const handleClick = () => {
         setIsToggled(!isToggled)
+        console.log(isToggled);
     }
 
     return (
@@ -26,14 +27,20 @@ const Navbar = () => {
                     </button>
                     <nav>
                         <ul id="primary-navigation" className="primary-navigation underline-indicators flex">
-                            <li onClick={handleClick}>
-                                <a className="ff-heading" href="https://www.google.com/">Case Studies</a>
+                            <li>
+                                <Link onClick={handleClick} className="ff-heading" to="case-studies" activeClass="active" smooth={true}>
+                                        Case Studies
+                                </Link>
                             </li>
-                            <li onClick={handleClick}>
-                                <a className="ff-heading" href="https://www.google.com/">Experiments</a>
+                            <li>
+                                <Link onClick={handleClick} className="ff-heading" to="experiments" smooth={true}>
+                                        Experiments
+                                </Link>
                             </li>
-                            <li onClick={handleClick}>
-                                <a className="ff-heading" href="https://www.google.com/">Contact</a>
+                            <li>
+                                <Link onClick={handleClick} className="ff-heading" to="contact" smooth={true}>
+                                        Contact
+                                </Link>
                             </li>
                         </ul>
                     </nav>

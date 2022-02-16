@@ -4,3 +4,15 @@
     display: flex;
     gap: $gap;
 }
+
+.direction-column {
+    flex-direction: column;
+}
+
+.justify-end {
+    justify-content: end;
+}
+
+.align-end {
+    align-items: end;
+}
