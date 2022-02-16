@@ -17,11 +17,3 @@ function App() {
 export default App;
 
 
-{/* <Router>
-      <Navbar/>
-      <Home />
-      <Routes>
-        <Route path="/neebs-gaming" element={<Project className="neebs"/>} />
-        <Route path="/the-music-shop" element={<Project className="music"/>} />
-      </Routes>
-    </Router> */}
