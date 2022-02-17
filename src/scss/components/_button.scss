@@ -4,22 +4,31 @@
 
 .button {
     display: inline-flex;
+    position: relative;
     max-width: max-content;
     position: relative;
     gap: 1rem;
     align-items: center;
-    padding: .75rem 0;
-    border-bottom: solid 4px transparent;
+    padding: .75rem 1.5rem;
+    background-color: $clr-orange;
+    background: linear-gradient(90deg, rgba(255,101,100,1) 0%, rgba(255,157,100,1) 53%, rgba(255,101,100,1) ) var(--x, 0) / 200%;
+    color: $clr-dark-blue;
     font-family: $ff-heading;
+    font-size: .875rem;
+    font-weight: $fw-700;
     cursor: pointer;
+    transition: .5s;
+    // border-radius: 10px;
 
     &:hover,
     &:focus {
-        border-color: $clr-orange;
+        --x: 100%;
+        box-shadow: 10px 10px 0 0 #34364d;
     }
 
     // > svg {
     //     position: absolute;
-    //     right: -25px;
+    //     right: -15px;
+    //     color: white;
     // }
 }

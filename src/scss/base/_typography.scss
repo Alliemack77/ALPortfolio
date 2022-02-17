@@ -27,3 +27,12 @@
 /* Other styles */
 .uppercase { text-transform: uppercase;}
 
+/* Headers */
+.secondary-header {
+    padding-block: clamp(4rem, 2vw, 5rem) ;
+    text-align: center;
+
+    .title {
+        margin-block-end: clamp(1rem, 2vw, 2.5rem);
+    }
+}

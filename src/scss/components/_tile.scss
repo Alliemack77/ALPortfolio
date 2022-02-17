@@ -1,32 +1,32 @@
 @use '../abstracts/variables' as *;
 
 .tile {
-    // border: solid red 2px; 
-    margin-bottom: 5rem;
-
-    padding: 2rem;
-    // width: 100%;
-    // height: 100%;
+    padding: 0 clamp(1rem, 4vw, 3.5rem) clamp(1.85rem, 5vw, 3rem);
     aspect-ratio: 16 / 9;
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 10px 10px 50px 5px rgba(0, 0, 0, 0.45);
     
     .heading {
-        // border: solid green 2px;
         gap: 0;
-        // justify-content: end;
-        // align-items: end;
         height: 100%;
-
     }
+
+    .title {
+        margin-bottom: 1rem;
+    }
+
     .subtitle {
         display: none;
-        padding-block-end: 1.5rem;
+        margin-block-end: 2rem;
     }
     
     @media (min-width: $mq-768) {
         max-width: 75%;
+
+        .title {
+            margin-bottom: 0;
+        }
 
         .subtitle {
             display: block;

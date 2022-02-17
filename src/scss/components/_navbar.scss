@@ -2,8 +2,6 @@
 @use '../abstracts/colors' as *;
 
 .primary-header {
-    // border: solid red 2px;
-    
     padding: 2rem $p-body;
     background: transparentize($clr-dark-blue, .25);
 
@@ -16,13 +14,11 @@
         justify-content: space-between;
         max-width: 87.5rem;
         margin: 0 auto;
-
     }
 
 }
 
 .primary-navigation {
-    // border: solid blue 2px;
 
     @media (max-width: 35rem) {
         position: fixed;
@@ -45,14 +41,17 @@
         }
     }
 
-    &.underline-indicators a {
-        padding: .75rem 0;
-        border-bottom: solid transparent 4px;
+    
+}
 
-        &:hover, 
-        &:focus {
-            border-color: $clr-orange;
-        }
+.underline-indicators a {
+    padding: .75rem 0;
+    border-bottom: solid transparent 4px;
+    color: $clr-white;
+
+    &:hover, 
+    &:focus {
+        border-color: $clr-orange;
     }
 }
 

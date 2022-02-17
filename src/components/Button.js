@@ -1,11 +1,10 @@
-import { AiOutlineArrowRight } from 'react-icons/ai';
-// import { Link } from 'react-router-dom';
+// import { AiOutlineArrowRight } from 'react-icons/ai';
 
 const Button = ({text, href}) => {
     return (
             <a className="button" href={href}>
-                {text} 
-                <AiOutlineArrowRight />
+                <p>{text}</p> 
+                {/* <AiOutlineArrowRight /> */}
             </a>
     )
 }

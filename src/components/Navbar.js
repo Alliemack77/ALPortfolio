@@ -32,11 +32,11 @@ const Navbar = () => {
                                         Case Studies
                                 </Link>
                             </li>
-                            <li>
+                            {/* <li>
                                 <Link onClick={handleClick} className="ff-heading" to="experiments" smooth={true}>
                                         Experiments
                                 </Link>
-                            </li>
+                            </li> */}
                             <li>
                                 <Link onClick={handleClick} className="ff-heading" to="contact" smooth={true}>
                                         Contact
