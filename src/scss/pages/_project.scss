@@ -80,11 +80,19 @@
     .description {
         padding: 7rem $p-body; 
         text-align: center;
+        align-items: center;
 
         .body {
-            margin-block-end: 4rem;
+            margin-block-end: 2rem;
             margin-inline: auto;
             max-width: 750px;
+        }
+
+        .tech-icons {
+            margin-block-end: 4rem;
+            svg {
+                font-size: 2rem;
+            }
         }
     }
 }

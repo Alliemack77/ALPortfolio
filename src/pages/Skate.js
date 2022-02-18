@@ -1,5 +1,7 @@
 import Button from "../components/Button";
 import Footer from "../components/Footer";
+import { DiHtml5 } from 'react-icons/di';
+import {SiNetlify, SiCss3} from 'react-icons/si';
 
 const Skate = () => {
     return (
@@ -11,10 +13,10 @@ const Skate = () => {
                     <div className="role">
                         <p className="ff-heading uppercase fw-300">
                             <span className="text-orange fw-700">Role </span> 
-                            frontend/ux/ui developer</p>
+                            Frontend developer/designer</p>
                         <p className="ff-heading uppercase fw-300">
                             <span className="text-orange fw-700">Context </span> 
-                            Person project</p>
+                            Personal project</p>
                         <p className="ff-heading uppercase fw-300">
                             <span className="text-orange fw-700">Period </span> 
                             February 2021</p>
@@ -22,7 +24,13 @@ const Skate = () => {
                 </header>
                 <main className="description flex direction-column">
                         <h2 className="fs-800 ff-heading">The Project</h2>
-                        <p className="body fs-400">The BeeHive is a networking platform created to support the often overlooked community of nerodiverse software developers. After a friend revealed the difficulity he had connecting with other developers like himself who were on the Asperger spectrum, I knew I had to help build this project. Uses React, Redux, Axios, and Sass. </p>
+                        <p className="body fs-400">My favorite way to learn is to try and emulate a really cool webiste. This was the first project where I build in Figma first, then translated the design into code. I had so much fun emulating this webpage, eventhough I can see a lot of places where I've imporved since then. However everytime I visit this page I can feel the ocean breeze in my hair while I zip amongst sun-soaked palm trees on my electric skateboard. </p>
+                        <div className="tech-icons flex">
+                            <p>Built with:</p>
+                            <DiHtml5 /> 
+                            <SiCss3 /> 
+                            <SiNetlify />  
+                        </div>
                         <div className="project-buttons flow-horiz-xs">
                             <Button text="Website" href="https://theskateshop.netlify.app" target="_blank" />
                             <Button text="Figma" href="https://www.figma.com/file/GkWAuuSnwxT0HRQBGtKu5E/The-Skate-Shop?node-id=0%3A1" target="_blank" />

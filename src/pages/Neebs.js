@@ -1,5 +1,8 @@
 import Button from "../components/Button";
 import Footer from "../components/Footer";
+import {DiSass, DiReact} from 'react-icons/di';
+import {SiNetlify} from 'react-icons/si';
+
 
 const Neebs = () => {
     return (
@@ -22,7 +25,13 @@ const Neebs = () => {
                 </header>
                 <main className="description flex direction-column">
                         <h2 className="fs-800 ff-heading">The Project</h2>
-                        <p className="body fs-400">With almost 3 million subscribers, Neebs Gaming is well on their way to producing some of the most watched gaming content on YouTube. My goal in this redesign was to showcase the gaming content, create a dedicated space for both live events and merchandise, and create a space for fans like me to geek out.</p>
+                        <p className="body fs-400">With almost 3 million subscribers, Neebs Gaming is well on their way to producing some of the most watched gaming content on YouTube. My goal in this redesign was to showcase their content, create dedicated pages for news, live events and merchandise, and build a space for fans like me to geek out.</p>
+                        <div className="tech-icons flex">
+                            <p>Built with:</p>
+                            <DiReact /> 
+                            <DiSass /> 
+                            <SiNetlify />  
+                        </div>
                         <div className="project-buttons flow-horiz-xs">
                             <Button text="Website" href="https://github.com/Alliemack77/Neebs-Gaming" target="_blank" />
                             <Button text="Figma" href="https://www.figma.com/file/nJ5faYkdZJRgBsgfKy4bNf/Neebs-Gaming?node-id=0%3A1" target="_blank" />

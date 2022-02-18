@@ -1,5 +1,7 @@
 import Button from "../components/Button";
 import Footer from "../components/Footer";
+import {DiSass, DiReact} from 'react-icons/di';
+import {SiNetlify, SiGitlab, SiRedux} from 'react-icons/si';
 
 const Music = () => {
     return (
@@ -22,7 +24,15 @@ const Music = () => {
                 </header>
                 <main className="description flex direction-column">
                         <h2 className="fs-800 ff-heading">The Project</h2>
-                        <p className="body fs-400">The BeeHive is a networking platform created to support the often overlooked community of nerodiverse software developers. After a friend revealed the difficulity he had connecting with other developers like himself who were on the Asperger spectrum, I knew I had to help build this project. Uses React, Redux, Axios, and Sass. </p>
+                        <p className="body fs-400">The BeeHive is a networking platform for neurodiverse IT professionals who are looking for career support and community. I developed this project along with my classmates as part of my final project at Digital Career Institute.</p>
+                        <div className="tech-icons flex">
+                            <p>Built with:</p>
+                            <DiReact /> 
+                            <SiRedux /> 
+                            <DiSass /> 
+                            <SiGitlab /> 
+                            <SiNetlify />  
+                        </div>
                         <div className="project-buttons flow-horiz-xs">
                             <Button text="Website" href="https://thebeehivenetwork.netlify.app" target="_blank" />
                             <Button text="Figma" href="https://www.figma.com/file/NiCxcjrkUTx5RQdsmV4PjS/Final-Project-Wireframe?node-id=144%3A879" target="_blank" />
