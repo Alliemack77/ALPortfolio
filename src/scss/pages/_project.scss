@@ -89,7 +89,10 @@
         }
 
         .tech-icons {
+            gap: 1rem;
+            align-items: center;
             margin-block-end: 4rem;
+
             svg {
                 font-size: 2rem;
             }

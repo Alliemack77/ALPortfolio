@@ -27,15 +27,15 @@ const Neebs = () => {
                         <h2 className="fs-800 ff-heading">The Project</h2>
                         <p className="body fs-400">With almost 3 million subscribers, Neebs Gaming is well on their way to producing some of the most watched gaming content on YouTube. My goal in this redesign was to showcase their content, create dedicated pages for news, live events and merchandise, and build a space for fans like me to geek out.</p>
                         <div className="tech-icons flex">
-                            <p>Built with:</p>
+                            <p>Tech stack:</p>
                             <DiReact /> 
                             <DiSass /> 
                             <SiNetlify />  
                         </div>
                         <div className="project-buttons flow-horiz-xs">
-                            <Button text="Website" href="https://github.com/Alliemack77/Neebs-Gaming" target="_blank" />
-                            <Button text="Figma" href="https://www.figma.com/file/nJ5faYkdZJRgBsgfKy4bNf/Neebs-Gaming?node-id=0%3A1" target="_blank" />
-                            <Button text="Github" href="https://github.com/Alliemack77/Neebs-Gaming" target="_blank" />
+                            <Button text="Website" href="https://neebsgaming.netlify.app"/>
+                            <Button text="Figma" href="https://www.figma.com/file/nJ5faYkdZJRgBsgfKy4bNf/Neebs-Gaming?node-id=0%3A1"/>
+                            <Button text="Github" href="https://github.com/Alliemack77/Neebs-Gaming"/>
                         </div>
                 </main>
                 <Footer />
