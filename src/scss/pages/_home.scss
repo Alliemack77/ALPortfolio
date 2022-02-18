@@ -4,9 +4,15 @@
 /* Hero */
 .hero {
     height: 100vh;
-    display: flex;
-    gap: 6rem;
-    justify-content: space-between;
+    margin-top: 15rem;
+
+    @media (min-width: $mq-768) {
+        display: flex;
+        gap: 6rem;
+        justify-content: space-between;
+        margin-top: 0;
+    }
+    
 
     .hero-grid {
         align-self: center;

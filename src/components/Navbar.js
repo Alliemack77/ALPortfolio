@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import logo from '../images/logo-lrg.png'
 import { Link } from 'react-scroll';
-import { Link as Navlink } from 'react-router-dom';
+import { Link as Linkhome } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -16,7 +16,9 @@ const Navbar = () => {
         
         <header className="primary-header">
             <div className="flex">
-                <img className="logo" src={logo} alt="Allison Leggett"/>
+                <Linkhome to="/">
+                    <img className="logo" src={logo} alt="Allison Leggett"/>
+                </Linkhome>
                 <div className={`${isToggled ? "nav-open" : ""}`}>
                     <button
                         className="mobile-nav-toggle"
@@ -28,9 +30,9 @@ const Navbar = () => {
                     <nav>
                         <ul id="primary-navigation" className="primary-navigation underline-indicators flex">
                             <li>
-                                <Navlink onClick={handleClick} className="ff-heading" to="/" activeclass="active" smooth="true">
+                                <Linkhome onClick={handleClick} className="ff-heading" to="/" activeclass="active" smooth="true">
                                         Home
-                                </Navlink>
+                                </Linkhome>
                             </li>
                             <li>
                                 <Link onClick={handleClick} className="ff-heading" to="case-studies" smooth="true">

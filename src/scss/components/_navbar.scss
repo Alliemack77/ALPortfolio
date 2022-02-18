@@ -3,11 +3,13 @@
 
 .primary-header {
     padding: 2rem $p-body;
-    // background: transparentize($clr-dark-blue, .25);
-    // background-color: transparent;
 
     .logo {
         max-width: 50px;
+        display: none;
+        @media (min-width: $mq-768) {
+            display: block;
+        }
     }
 
     .flex {
