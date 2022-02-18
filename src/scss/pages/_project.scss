@@ -1,0 +1,90 @@
+@use '../abstracts/colors' as *;
+@use '../abstracts/variables' as *;
+
+
+.project {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+
+    &.neebs .description {
+        background-color: $clr-eggplant;
+    }
+    &.music .description {
+        background-color: $clr-seafoam;
+    }
+    &.beehive .description {
+        background-color: $clr-olive;
+    }
+    &.skate .description {
+        background-color: $clr-emerald;
+    }
+
+    &.neebs .header {
+        background-image: url('../../images/arkAll5-lrg.png');
+    }
+
+    &.music .header {
+        background-image: url('../../images/music-lrg.png');
+    }
+
+    &.beehive .header {
+        background-image: url('../../images/dev-group-lrg.jpg');
+    }
+
+    &.skate .header {
+        background-image: url('../../images/skate-lrg.png');
+    }
+    
+
+    .header {
+        gap: 0;
+        height: 90vh;
+        max-height: 950px;
+        padding-block: clamp(4rem, 2vw, 5rem) ;
+        text-align: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        .title {
+            align-self: end;
+            margin-top: 7rem;
+        }
+
+        .role {
+            font-size: 14px;
+            align-self: end;
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            flex-direction: column;
+            width: 100%;
+            padding: 0 $p-body;
+            max-width: 87.5rem;
+            margin: 0 auto;
+
+
+            @media (min-width: 800px) {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            @media (min-width: 1500px) {
+                padding-inline: 0;
+            }
+            
+        }
+    }
+
+    .description {
+        padding: 7rem $p-body; 
+        text-align: center;
+
+        .body {
+            margin-block-end: 4rem;
+            margin-inline: auto;
+            max-width: 750px;
+        }
+    }
+}

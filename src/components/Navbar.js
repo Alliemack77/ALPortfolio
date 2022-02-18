@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import logo from '../images/logo-lrg.png'
 import { Link } from 'react-scroll';
+import { Link as Navlink } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -9,7 +10,6 @@ const Navbar = () => {
 
     const handleClick = () => {
         setIsToggled(!isToggled)
-        console.log(isToggled);
     }
 
     return (
@@ -28,7 +28,12 @@ const Navbar = () => {
                     <nav>
                         <ul id="primary-navigation" className="primary-navigation underline-indicators flex">
                             <li>
-                                <Link onClick={handleClick} className="ff-heading" to="case-studies" activeClass="active" smooth={true}>
+                                <Navlink onClick={handleClick} className="ff-heading" to="/" activeclass="active" smooth="true">
+                                        Home
+                                </Navlink>
+                            </li>
+                            <li>
+                                <Link onClick={handleClick} className="ff-heading" to="case-studies" smooth="true">
                                         Case Studies
                                 </Link>
                             </li>
@@ -38,7 +43,7 @@ const Navbar = () => {
                                 </Link>
                             </li> */}
                             <li>
-                                <Link onClick={handleClick} className="ff-heading" to="contact" smooth={true}>
+                                <Link onClick={handleClick} className="ff-heading" to="contact" smooth="true">
                                         Contact
                                 </Link>
                             </li>

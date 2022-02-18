@@ -1,8 +1,10 @@
 @use '../abstracts/variables' as *;
+@use '../abstracts/colors' as *;
 
 .tile {
     padding: 0 clamp(1rem, 4vw, 3.5rem) clamp(1.85rem, 5vw, 3rem);
     aspect-ratio: 16 / 9;
+    background-color: $clr-dark-blue;
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 10px 10px 50px 5px rgba(0, 0, 0, 0.45);

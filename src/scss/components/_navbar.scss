@@ -3,7 +3,8 @@
 
 .primary-header {
     padding: 2rem $p-body;
-    background: transparentize($clr-dark-blue, .25);
+    // background: transparentize($clr-dark-blue, .25);
+    // background-color: transparent;
 
     .logo {
         max-width: 50px;
@@ -63,8 +64,8 @@
     background-image: url('../../images/hamburger.png');
     background-repeat: no-repeat;
     z-index: 2000;
-    top: 1rem;
-    right: 1rem;
+    top: 2rem;
+    right: 2rem;
     width: 3rem;
     height: 3rem;
     cursor: pointer;

@@ -1,4 +1,5 @@
 import Button from '../components/Button'
+import Footer from '../components/Footer'
 import Socialbar from '../components/Socialbar'
 import Tile from '../components/Tile'
 import logo from '../images/logo-lrg.png'
@@ -10,16 +11,16 @@ const Home = () => {
        
         <div className="container">
             <section className="hero">
-                <div className="hero-grid">
+                <header className="hero-grid">
                     <h1 className="title fs-900 ff-heading">Allison Leggett</h1>
                     <p className="subtitle fs-500">Web Developer & Designer</p>
                     <Button text="About Me"  />
                     <img className="icon" src={logo} alt=""></img>
-                </div>
+                </header>
                 <Socialbar />
             </section>
         </div>
-        <main> 
+        <main className="home"> 
             <div id="case-studies" className="container">
                 <section className="case-studies">
                     <header className="secondary-header">
@@ -31,11 +32,11 @@ const Home = () => {
                             caseStudies.map((item, index) => {
                                 if (index === 0 || index % 2 === 0) {
                                     return (
-                                        <Tile key={item.title} img={item.img} title={item.title} subtitle={item.subtitle} href={item.href} className="justify-end align-end" />
+                                        <Tile {...item}  key={item.title} />
                                     )
                                 }else {
                                     return (
-                                        <Tile key={item.title} img={item.img} title={item.title} subtitle={item.subtitle} href={item.href} className="justify-end" />
+                                        <Tile {...item} key={item.title} />
                                     )
                                 }
                         
@@ -53,7 +54,7 @@ const Home = () => {
             </section> */}
         </main>
 
-
+        <Footer />
         </>
 
         

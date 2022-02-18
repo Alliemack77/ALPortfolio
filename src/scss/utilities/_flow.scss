@@ -36,6 +36,6 @@
 
 
 /* Horizontal flow */
-.flow-horiz-sm > * + * {
-    margin-left: $flow-space-sm;
+.flow-horiz-xs > * + * {
+    margin-left: $flow-space-xs;
 }
