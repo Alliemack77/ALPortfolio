@@ -26,7 +26,7 @@ const Music = () => {
                         <h2 className="fs-800 ff-heading">The Project</h2>
                         <p className="body fs-400">The BeeHive is a networking platform for neurodiverse IT professionals who are looking for career support and community. I developed this project along with my classmates as part of my final project at Digital Career Institute.</p>
                         <div className="tech-icons flex">
-                            <p>Built with:</p>
+                            <p>Tech stack:</p>
                             <DiReact /> 
                             <SiRedux /> 
                             <DiSass /> 

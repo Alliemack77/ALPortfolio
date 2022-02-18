@@ -26,7 +26,7 @@ const Music = () => {
                         <h2 className="fs-800 ff-heading">The Project</h2>
                         <p className="body fs-400">I created this project to challenge how quickly I could design, build and deploy a webpage. The concept was a landing page promoting online performances for a recording studio in downtown Nashville. This project took 10 days to complete and looking back I can spot some design flaws, but overall I think I was able to capture the spirit of this fictional hotspot.</p>
                         <div className="tech-icons flex">
-                            <p>Built with:</p>
+                            <p>Tech stack:</p>
                             <DiSass /> 
                             <SiNetlify />  
                             <p className="ff-heading">Parcel</p>
