@@ -4,12 +4,13 @@
 /* Hero */
 .hero {
     height: 100vh;
-    margin-top: 10rem;
+    // margin-top: 10rem;
+    display: flex;
+    gap: 6rem;
+    justify-content: space-between;
 
     @media (min-width: $mq-768) {
-        display: flex;
-        gap: 6rem;
-        justify-content: space-between;
+        
         margin-top: 0;
     }
     
