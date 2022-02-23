@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar'
 import Neebs from './pages/Neebs'
 import Music from './pages/Music'
 import BeeHive from './pages/BeeHive'
@@ -10,8 +9,6 @@ import './scss/main.scss'
 function App() {
   return (
     <Router>
-      <Navbar/>
-      {/* <Home /> */}
       <Routes>
         <Route path="/" element={<Home/>}></Route>
         <Route path="/neebs-gaming" element={<Neebs />}></Route>

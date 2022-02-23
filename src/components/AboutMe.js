@@ -1,6 +1,5 @@
 import Socialbar from "./Socialbar";
-import {DiSass, DiReact, DiCss3Full  } from 'react-icons/di';
-import {SiNetlify} from 'react-icons/si';
+import {DiSass, DiReact, DiCss3Full, DiJavascript1  } from 'react-icons/di';
  
 const AboutMe = ({onClick}) => {
 
@@ -9,7 +8,7 @@ const AboutMe = ({onClick}) => {
             <div className="info">
                 <button className="about-me-toggle" onClick={onClick} />
                 <div className="body">
-                    <h1 className="text-dark-blue ff-heading fw-700">Hello, world! It's me, Allison.</h1>
+                    <h2 className="text-dark-blue ff-heading fs-600 fw-700 ">Hello, world! It's me, Allison.</h2>
                     <p className="text-dark-blue fs-200">Frontend Web Developer and Designer</p>
                     <p className="text-dark-blue fs-300">I'm a <span className="fw-700">Frontend Web Developer </span> living in Mountain View, California. <span className="fw-700">I love writing CSS</span> and using <span className="fw-700">Sass</span> to build modern user experiances on the web. 
                     </p>
@@ -20,12 +19,12 @@ const AboutMe = ({onClick}) => {
                     <DiReact /> 
                     <DiCss3Full /> 
                     <DiSass /> 
-                    <SiNetlify />   
+                    <DiJavascript1 />   
                 </div>
             </div> 
 
             <div className="contact">
-                <h2 className="ff-heading fs-700">Contact Me</h2>
+                <h2 className="ff-heading fs-600">Contact Me</h2>
                 <Socialbar />
             </div>
             

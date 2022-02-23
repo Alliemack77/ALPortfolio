@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 import { Link as Linkhome } from 'react-router-dom';
 
 
-const Navbar = () => {
+const Navbar = ({isProject}) => {
 
     const [isToggled, setIsToggled]  = useState(false);
 
@@ -34,11 +34,21 @@ const Navbar = () => {
                                         Home
                                 </Linkhome>
                             </li>
-                            <li>
-                                <Link onClick={handleClick} className="ff-heading" to="case-studies" smooth="true">
-                                        Case Studies
-                                </Link>
-                            </li>
+                            {isProject? (
+                                // <li>
+                                //     <Link onClick={handleClick} className="ff-heading" to="case-studies" smooth="true">
+                                //             Case Studies
+                                //     </Link>
+                                // </li>
+                                null
+                            ) : (
+                                <li>
+                                    <Link onClick={handleClick} className="ff-heading" to="case-studies" smooth="true">
+                                            Case Studies
+                                    </Link>
+                                </li>
+                            )}
+                            
                             {/* <li>
                                 <Link onClick={handleClick} className="ff-heading" to="experiments" smooth={true}>
                                         Experiments

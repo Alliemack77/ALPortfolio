@@ -2,11 +2,13 @@ import Button from "../components/Button";
 import Footer from "../components/Footer";
 import {DiSass, DiReact} from 'react-icons/di';
 import {SiNetlify} from 'react-icons/si';
+import Navbar from "../components/Navbar";
 
 
 const Neebs = () => {
     return (
         <>
+            <Navbar isProject/>
             <div className="project neebs">
                 <header className="header grid">
                     <h1 className="title fs-900 fw-700 ff-heading">Neebs Gaming</h1>

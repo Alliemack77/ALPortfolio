@@ -2,10 +2,12 @@ import Button from "../components/Button";
 import Footer from "../components/Footer";
 import {DiSass} from 'react-icons/di';
 import {SiNetlify} from 'react-icons/si';
+import Navbar from "../components/Navbar";
 
 const Music = () => {
     return (
         <>
+            <Navbar isProject />
             <div className="project music">
                 <header className="header grid">
                     <h1 className="title fs-900 fw-700 ff-heading">The Music Shop</h1>

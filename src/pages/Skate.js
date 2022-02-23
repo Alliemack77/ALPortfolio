@@ -2,10 +2,12 @@ import Button from "../components/Button";
 import Footer from "../components/Footer";
 import { DiHtml5 } from 'react-icons/di';
 import {SiNetlify, SiCss3} from 'react-icons/si';
+import Navbar from "../components/Navbar";
 
 const Skate = () => {
     return (
         <>
+            <Navbar isProject />
             <div className="project skate">
                 <header className="header grid">
                     <h1 className="title fs-900 fw-700 ff-heading">The Skate Shop</h1>

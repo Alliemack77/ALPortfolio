@@ -6,6 +6,7 @@ import Tile from '../components/Tile'
 import AboutMe from '../components/AboutMe'
 import logo from '../images/logo-lrg.png'
 import { caseStudies } from '../data/caseStudy-data';
+import Navbar from '../components/Navbar'
 
 const Home = () => {
 
@@ -17,7 +18,7 @@ const Home = () => {
 
     return (
         <>
-       
+       <Navbar />
         <div className="container">
             <section className="hero">
                 <header className="hero-grid">
