@@ -12,7 +12,6 @@ const Home = () => {
     const [showDetails, setShowDetails] = useState(false);
 
     const handleClick = () => {
-        console.log(showDetails)
         setShowDetails(!showDetails)
     }
 

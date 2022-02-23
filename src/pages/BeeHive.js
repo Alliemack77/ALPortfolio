@@ -22,7 +22,7 @@ const Music = () => {
                             June 2021</p>
                     </div>
                 </header>
-                <main className="description flex direction-column">
+                <main className="description">
                         <h2 className="fs-800 ff-heading">The Project</h2>
                         <p className="body fs-400">The BeeHive is a networking platform for neurodiverse IT professionals who are looking for career support and community. I developed this project alongside four classmates for our final project at Digital Career Institute.</p>
                         <div className="tech-icons flex">

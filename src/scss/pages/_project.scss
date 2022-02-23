@@ -80,7 +80,6 @@
     .description {
         padding: 7rem $p-body; 
         text-align: center;
-        align-items: center;
 
         .body {
             margin-block-end: 2rem;
@@ -91,6 +90,7 @@
         .tech-icons {
             gap: 1rem;
             align-items: center;
+            justify-content: center;
             margin-block-end: 4rem;
 
             svg {
