@@ -24,7 +24,7 @@ const Skate = () => {
                 </header>
                 <main className="description flex direction-column">
                         <h2 className="fs-800 ff-heading">The Project</h2>
-                        <p className="body fs-400">My favorite way to learn is to try and emulate a really cool webiste. This was the first project where I build in Figma first, then translated the design into code. I had so much fun emulating this webpage, eventhough I can see a lot of places where I've imporved since then. However everytime I visit this page I can feel the ocean breeze in my hair while I zip amongst sun-soaked palm trees on my electric skateboard. </p>
+                        <p className="body fs-400">My favorite way to learn is to try and emulate a really cool webiste. This was the first project where I designed in Figma first, then translated the design into code. I had so much fun building this landing page, eventhough I can see a lot of places where I've improved since then. However everytime I visit this page I can feel the ocean breeze in my hair while I zip amongst sun-soaked palm trees on my electric skateboard. </p>
                         <div className="tech-icons flex">
                             <p>Tech stack:</p>
                             <DiHtml5 /> 
