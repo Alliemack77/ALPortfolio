@@ -1,11 +1,21 @@
+import { useState } from 'react'
 import Button from '../components/Button'
 import Footer from '../components/Footer'
 import Socialbar from '../components/Socialbar'
 import Tile from '../components/Tile'
+import AboutMe from '../components/AboutMe'
 import logo from '../images/logo-lrg.png'
 import { caseStudies } from '../data/caseStudy-data';
 
 const Home = () => {
+
+    const [showDetails, setShowDetails] = useState(false);
+
+    const handleClick = () => {
+        console.log(showDetails)
+        setShowDetails(!showDetails)
+    }
+
     return (
         <>
        
@@ -14,7 +24,8 @@ const Home = () => {
                 <header className="hero-grid">
                     <h1 className="title fs-900 ff-heading">Allison Leggett</h1>
                     <p className="subtitle fs-500">Web Developer & Designer</p>
-                    <Button text="About Me"  />
+                    <Button text="About Me"  onClick={handleClick}/>
+                    {showDetails? <AboutMe onClick={handleClick} /> : null}
                     <img className="icon" src={logo} alt=""></img>
                 </header>
                 <Socialbar />

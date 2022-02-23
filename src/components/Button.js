@@ -1,10 +1,8 @@
-// import { AiOutlineArrowRight } from 'react-icons/ai';
 
-const Button = ({text, href}) => {
+const Button = ({text, href, onClick}) => {
     return (
-            <a className="button" href={href}>
+            <a className="button" href={href} onClick={onClick}>
                 <p>{text}</p> 
-                {/* <AiOutlineArrowRight /> */}
             </a>
     )
 }

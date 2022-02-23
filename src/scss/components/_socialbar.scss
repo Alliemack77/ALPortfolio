@@ -2,15 +2,8 @@
 @use '../abstracts/variables' as *;
 
 .socialbar {
-    display: none;
-    
-
-    @media (min-width: $mq-768) {
-        display: flex;
-        gap: 1rem;
-        flex-direction: column;
-        justify-content: center;
-    }
+    gap: 1rem;
+    justify-content: center;
 
     > a {
         font-size: $fs-600;

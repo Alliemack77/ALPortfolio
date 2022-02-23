@@ -1,0 +1,72 @@
+@use '../abstracts/colors' as *;
+@use '../abstracts/variables' as *;
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    min-height: 85%;
+    top: 2%;
+    background-color: $clr-offwhite;
+    box-shadow: 5px 5px 50px 5px #0f1016;
+
+    @media (min-width: $mq-768) {
+        flex-direction: row;
+    }
+
+    .about-me-toggle {
+        border: none;
+        background-color: transparent;
+        background-image: url('../../images/hamburger-close.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 2rem;
+        height: 2rem;
+        cursor: pointer;
+    }
+
+    .info {
+        flex: 1 0 50%;
+        display: flex;
+        flex-direction: column;
+        padding: clamp(1rem, 3vw, 4rem);
+        background-image: url('../../images/tile_background (1).png');
+
+        .body {
+            margin-block: auto;
+        }
+
+        .body > p + P {
+            margin-block-start: 1rem;
+        }
+
+        .tech-icons {
+            display: none;
+            font-size: 3rem;
+            color: $clr-dark-blue;
+
+            @media (min-width: $mq-768) {
+                display: flex;
+                gap: 2rem;
+            }
+            
+        }
+    }
+
+    .contact {
+        display: grid;
+        place-content: center;
+        flex: 1 0 50%;
+        background-color: $clr-dark-blue;
+        padding-block: 3rem;
+        text-align: center;
+
+        .socialbar {
+            display: flex;
+            gap: 2.5rem;
+            flex-direction: row;
+            margin-block-start: 2rem
+        }
+    }
+
+}

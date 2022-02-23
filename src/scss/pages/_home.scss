@@ -3,17 +3,17 @@
 
 /* Hero */
 .hero {
+    // border: solid green 2px;
+
     height: 100vh;
-    // margin-top: 10rem;
     display: flex;
     gap: 6rem;
     justify-content: space-between;
+    position: relative;
 
     @media (min-width: $mq-768) {
-        
         margin-top: 0;
     }
-    
 
     .hero-grid {
         align-self: center;
@@ -44,6 +44,15 @@
             margin-top:-2rem;
         }
 
+    }
+
+    .socialbar {
+        display: none;
+
+        @media (min-width: $mq-768) {
+            display: flex;
+            flex-direction: column;
+        }
     }
 }
 
