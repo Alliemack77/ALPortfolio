@@ -1,4 +1,4 @@
-import neebsSmall from '../images/ark-small.jpg';
+import neebsSmall from '../images/arkAll5-small.png';
 import musicSmall from '../images/music-small.png'
 import beehiveSmall from '../images/dev-group-small.png'
 import skateSmall from '../images/skate-small.png'
