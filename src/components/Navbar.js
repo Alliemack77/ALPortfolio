@@ -35,11 +35,6 @@ const Navbar = ({isProject}) => {
                                 </Linkhome>
                             </li>
                             {isProject? (
-                                // <li>
-                                //     <Link onClick={handleClick} className="ff-heading" to="case-studies" smooth="true">
-                                //             Case Studies
-                                //     </Link>
-                                // </li>
                                 null
                             ) : (
                                 <li>

@@ -1,8 +1,9 @@
+import Navbar from "../components/Navbar";
 import Button from "../components/Button";
+import ProjectNav from "../components/ProjectNav";
 import Footer from "../components/Footer";
 import {DiSass} from 'react-icons/di';
 import {SiNetlify} from 'react-icons/si';
-import Navbar from "../components/Navbar";
 
 const Music = () => {
     return (
@@ -39,6 +40,7 @@ const Music = () => {
                             <Button text="Github" href="https://github.com/Alliemack77/TheMusicShop" target="_blank" />
                         </div>
                 </main>
+                <ProjectNav href="/the-beehive" next="The BeeHive"/>
                 <Footer />
             </div>
         </>

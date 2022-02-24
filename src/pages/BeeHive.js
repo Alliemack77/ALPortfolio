@@ -1,8 +1,9 @@
+import Navbar from "../components/Navbar";
 import Button from "../components/Button";
+import ProjectNav from "../components/ProjectNav";
 import Footer from "../components/Footer";
 import {DiSass, DiReact} from 'react-icons/di';
 import {SiNetlify, SiGitlab, SiRedux} from 'react-icons/si';
-import Navbar from "../components/Navbar";
 
 const Music = () => {
     return (
@@ -41,6 +42,7 @@ const Music = () => {
                             <Button text="GitLab" href="https://gitlab.com/dci-final-project/dci-final-project" target="_blank" />
                         </div>
                 </main>
+                <ProjectNav href="/the-skate-shop" next="The Skate Shop"/>
                 <Footer />
             </div>
         </>

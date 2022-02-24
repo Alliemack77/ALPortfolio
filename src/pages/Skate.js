@@ -1,8 +1,9 @@
+import Navbar from "../components/Navbar";
 import Button from "../components/Button";
+import ProjectNav from "../components/ProjectNav";
 import Footer from "../components/Footer";
 import { DiHtml5 } from 'react-icons/di';
 import {SiNetlify, SiCss3} from 'react-icons/si';
-import Navbar from "../components/Navbar";
 
 const Skate = () => {
     return (
@@ -39,6 +40,7 @@ const Skate = () => {
                             <Button text="GitHub" href="https://github.com/Alliemack77/The-Skate-Shop" target="_blank" />
                         </div>
                 </main>
+                <ProjectNav href="/neebs-gaming" next="Neebs Gaming"/>
                 <Footer />
             </div>
         </>

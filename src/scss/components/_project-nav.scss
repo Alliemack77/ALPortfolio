@@ -1,0 +1,24 @@
+@use '../abstracts/colors' as *;
+@use '../abstracts/variables' as *;
+
+.project-nav {
+    display: block;
+    background-color: $clr-offwhite;
+    background-image: url('../../images/tile_background\ \(1\).png');
+    padding: 4rem $p-body;
+
+    > div {
+        margin-inline: auto;
+        max-width: 87.5rem;   
+    }
+
+    .secondary-navigation {
+        justify-content: space-between;
+        align-items: center;
+
+        > svg {
+            color: $clr-dark-blue;
+            font-size: 4rem;
+        }
+    }
+}

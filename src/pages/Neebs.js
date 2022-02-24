@@ -1,8 +1,9 @@
+import Navbar from "../components/Navbar";
 import Button from "../components/Button";
+import ProjectNav from "../components/ProjectNav";
 import Footer from "../components/Footer";
 import {DiSass, DiReact} from 'react-icons/di';
 import {SiNetlify} from 'react-icons/si';
-import Navbar from "../components/Navbar";
 
 
 const Neebs = () => {
@@ -40,6 +41,7 @@ const Neebs = () => {
                             <Button text="Github" href="https://github.com/Alliemack77/Neebs-Gaming"/>
                         </div>
                 </main>
+                <ProjectNav href="/the-music-shop" next="The Music Shop"  />
                 <Footer />
             </div>
         </>
