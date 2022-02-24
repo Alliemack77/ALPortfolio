@@ -18,19 +18,12 @@
         margin-block-end: clamp(.5rem, 3vw, 2rem);
     }
     
-    // .title, 
-    // .subtitle {
-        
-    //     text-shadow: 2px 2px $clr-dark-blue;
-    // }
-    
     @media (min-width: $mq-768) {
         max-width: 75%;
 
         .title {
             margin-bottom: 0;
         }
-
     }
 
     
