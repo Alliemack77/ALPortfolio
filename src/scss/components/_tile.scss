@@ -14,13 +14,8 @@
         height: 100%;
     }
 
-    .title {
-        margin-bottom: 1rem;
-    }
-
     .subtitle {
-        display: none;
-        margin-block-end: 2rem;
+        margin-block-end: clamp(.5rem, 3vw, 2rem);
     }
     
     @media (min-width: $mq-768) {
@@ -30,9 +25,6 @@
             margin-bottom: 0;
         }
 
-        .subtitle {
-            display: block;
-        }
     }
 
     

@@ -34,6 +34,11 @@
 
         .body {
             margin-block: auto;
+            padding-block: 2rem;
+        }
+
+        & .title {
+            margin-block-end: 2rem;
         }
 
         .body > p + P {
