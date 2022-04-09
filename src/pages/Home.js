@@ -4,9 +4,11 @@ import Footer from '../components/Footer'
 import Socialbar from '../components/Socialbar'
 import Tile from '../components/Tile'
 import AboutMe from '../components/AboutMe'
-import logo from '../images/logo-lrg.png'
-import { caseStudies } from '../data/caseStudy-data';
 import Navbar from '../components/Navbar'
+import Experiment from '../components/Experiment'
+import logo from '../images/logo-lrg.png'
+import { caseStudies } from '../data/caseStudy-data'
+import {experiments} from '../data/experiments-data'
 
 const Home = () => {
 
@@ -57,12 +59,27 @@ const Home = () => {
                 </section>
             </div>
 
-            {/* <section className="experiments">
-                <header className="secondary-header">
-                    <h2 className="title text-dark-blue fs-400 fw-700 uppercase">Experiments</h2>
-                    <p className="text-dark-blue ff-heading fs-700 fw-500">Fun mini projects</p>
-                </header>
-            </section> */}
+            <div id="experiments" >
+                <section className="experiments">
+                    <header className="secondary-header">
+                        <h2 className="title text-dark-blue fs-400 fw-700 uppercase">Experiments</h2>
+                        <p className="text-dark-blue ff-heading fs-700 fw-500">Fun mini projects</p>
+                    </header>
+
+                    <div className="cards">
+                        {
+                            experiments.map(experiment => {
+                                return (
+                                    <Experiment key={experiment.id} {...experiment} />
+                                )
+                            })
+                        }
+                       
+                        
+                    </div>
+                </section>
+            </div>
+            
         </main>
 
         <Footer />

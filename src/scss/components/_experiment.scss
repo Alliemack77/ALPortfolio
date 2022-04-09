@@ -1,0 +1,45 @@
+@use '../abstracts/colors' as *;
+
+.card {
+    // border: solid purple 2px;
+    // max-width: 500px;
+    padding: 2rem clamp(2rem, 3vw, 6rem);
+    background: $clr-white;
+    box-shadow: 0 20px 60px 0 rgb(26 27 38 / 15%);
+    position: relative;
+    z-index: 1;
+
+    &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        width: 100%;
+        background-color: hsl(21 57% 89% / 50%);
+        transform: scale(0, 1);
+        transform-origin: left;
+        transition: transform 550ms;
+    }
+
+    &:hover::after {
+        transform: scale(1, 1);
+    }
+
+    .image {
+        width: 250px;
+        aspect-ratio: 1;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-inline: auto;
+        border-radius: 50%;
+        box-shadow: 20px 20px 60px 0 rgb(26 27 38 / 15%);
+        background-color: $clr-white;
+    }
+
+    .body {
+        justify-content: space-between;
+       
+    }
+
+}

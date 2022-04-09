@@ -37,18 +37,21 @@ const Navbar = ({isProject}) => {
                             {isProject? (
                                 null
                             ) : (
-                                <li>
-                                    <Link onClick={handleClick} className="ff-heading" to="case-studies" smooth="true">
-                                            Case Studies
-                                    </Link>
-                                </li>
+                                <>
+                                    <li>
+                                        <Link onClick={handleClick} className="ff-heading" to="case-studies" smooth="true">
+                                                Case Studies
+                                        </Link>
+                                    </li>
+
+                                    <li>
+                                        <Link onClick={handleClick} className="ff-heading" to="experiments" smooth={true}>
+                                                Experiments
+                                        </Link>
+                                    </li>
+                                </>
                             )}
                             
-                            {/* <li>
-                                <Link onClick={handleClick} className="ff-heading" to="experiments" smooth={true}>
-                                        Experiments
-                                </Link>
-                            </li> */}
                             <li>
                                 <Link onClick={handleClick} className="ff-heading" to="contact" smooth="true">
                                         Contact
