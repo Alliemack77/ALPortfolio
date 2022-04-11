@@ -7,13 +7,13 @@ import gradBorder from '../images/grad-border.jpg'
 export const experiments = [
     {
         id: "01", 
-        title: "Doctor Who Mock API",
+        title: "Mock API",
         url: "https://the-dr-who-api.herokuapp.com/",
         image: drApi
     },
     {
         id: "02", 
-        title: "Doctor Who Web Scraper",
+        title: "Web Scraper",
         url: "https://dr-who-web-scraper.herokuapp.com/",
         image: webScraper
     }, 
@@ -25,7 +25,7 @@ export const experiments = [
     },
     {
         id: "04", 
-        title: "Linear Gradient Border",
+        title: "Gradient Border",
         url: "https://codepen.io/alliemack/pen/YzYLONx?editors=1100",
         image: gradBorder
     },

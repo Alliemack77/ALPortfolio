@@ -12,6 +12,7 @@ const AboutMe = ({onClick}) => {
                     {/* <p className="text-dark-blue fs-200">Frontend Web Developer and Designer</p> */}
                     <p className="text-dark-blue fs-300">I'm a <span className="fw-700">Frontend Web Developer </span> living in Mountain View, California. <span className="fw-700">I love writing CSS</span> and using <span className="fw-700">Sass</span> to build modern user experiances on the web.</p>
                     <p className="text-dark-blue fs-300"><span className="fw-700">React</span> is my framework of choice, but I believe that half the fun is exploring the unknown. Want to explore together?</p>
+                    <p className="text-dark-blue fs-300">Most of my projects are frontend focused, but I am <span className="fw-700">curious about all things web development</span>. Checkout the <span className="fw-700">mini projects section</span> where I explore <span className="fw-700">API's, express, node</span> and more!</p>
                     <p className="text-dark-blue fs-300">When not styling the web you can find me <span className="fw-700">reading sci-fi novels</span>, <span className="fw-700">baking</span>, or <span className="fw-700">watching Dr. Who</span>.</p>
                 </div>
                 <div className="tech-icons">
