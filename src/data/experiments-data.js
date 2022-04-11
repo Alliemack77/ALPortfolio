@@ -1,5 +1,4 @@
 import drApi from '../images/drwhoapi.png'
-// import webScraper from '../images/webscraper-small.jpg'
 import webScraper from '../images/webscraper.jpg'
 import converter from '../images/converter.png'
 import gradBorder from '../images/grad-border.jpg'
@@ -15,7 +14,7 @@ export const experiments = [
     {
         id: "02", 
         title: "Doctor Who Web Scraper",
-        url: "https://github.com/Alliemack77/Doctor-Who-News",
+        url: "https://dr-who-web-scraper.herokuapp.com/",
         image: webScraper
     }, 
     {
