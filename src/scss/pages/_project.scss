@@ -19,6 +19,9 @@
     &.skate .description {
         background-color: $clr-emerald;
     }
+    &.vortex .description {
+        background-color: $clr-terracotta;
+    }
 
     &.neebs .header {
         background-image: url('../../images/arkAll5-lrg.png');
@@ -34,6 +37,10 @@
 
     &.skate .header {
         background-image: url('../../images/skate-lrg.png');
+    }
+
+    &.vortex .header {
+        background-image: url('../../images/vortex-lrg.jpg');
     }
     
 

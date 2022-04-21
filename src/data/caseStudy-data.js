@@ -2,8 +2,16 @@ import neebsSmall from '../images/ark-sm.jpg';
 import musicSmall from '../images/music-sm.jpg'
 import beehiveSmall from '../images/dev-group-sm.jpg'
 import skateSmall from '../images/skate-sm.jpg'
+import vortexSmall from '../images/vortex-sm.jpg'
 
 export const caseStudies = [
+    {
+        name: "vortex",
+        title: "The Vortex Project",
+        subtitle: "The ultimate Doctor Who experiance",
+        imgSmall: vortexSmall,
+        href: "/the-vortex"
+    },
     {
         name: "neebs",
         title: "Neebs Gaming",
@@ -32,4 +40,5 @@ export const caseStudies = [
         imgSmall: skateSmall,
         href: "/the-skate-shop"
     }
+
 ]

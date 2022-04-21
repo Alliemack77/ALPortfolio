@@ -2,6 +2,7 @@ import drApi from '../images/drwhoapi.png'
 import webScraper from '../images/webscraper.jpg'
 import converter from '../images/converter.png'
 import gradBorder from '../images/grad-border.jpg'
+import charCard from '../images/charcard.jpg'
 
 
 export const experiments = [
@@ -28,6 +29,12 @@ export const experiments = [
         title: "Gradient Border",
         url: "https://codepen.io/alliemack/pen/YzYLONx?editors=1100",
         image: gradBorder
+    },
+    {
+        id: "05", 
+        title: "Character Cards",
+        url: "https://codepen.io/alliemack/pen/xxpBReN",
+        image: charCard
     },
 
 ]
