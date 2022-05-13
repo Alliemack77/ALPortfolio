@@ -3,7 +3,6 @@ import webScraper from '../images/webscraper.jpg'
 import converter from '../images/converter.png'
 import gradBorder from '../images/grad-border.jpg'
 import charCard from '../images/charcard.jpg'
-import todoApp from '../images/todoapp.PNG'
 
 
 export const experiments = [
@@ -36,13 +35,6 @@ export const experiments = [
         title: "Character Cards",
         url: "https://codepen.io/alliemack/pen/xxpBReN",
         image: charCard
-    },
-
-    {
-        id: "06", 
-        title: "React Todo App",
-        url: "https://quiet-gnome-e94e89.netlify.app/",
-        image: todoApp
     },
 
 ]

@@ -4,6 +4,7 @@ import Music from './pages/Music'
 import BeeHive from './pages/BeeHive'
 import Skate from './pages/Skate'
 import Vortex from './pages/Vortex'
+import TodoApp from './pages/TodoApp'
 import Home from './pages/Home'
 import './scss/main.scss'
 
@@ -17,6 +18,7 @@ function App() {
         <Route path="/the-beehive" element={<BeeHive />}></Route>
         <Route path="/the-skate-shop" element={<Skate/>}></Route>
         <Route path="/the-vortex" element={<Vortex/>}></Route>
+        <Route path="/your-daily-todos" element={<TodoApp/>}></Route>
       </Routes>
     </Router>
 

@@ -22,6 +22,9 @@
     &.vortex .description {
         background-color: $clr-terracotta;
     }
+    &.todos .description {
+        background-color: $clr-concord;
+    }
 
     &.neebs .header {
         background-image: url('../../images/arkAll5-lrg.png');
@@ -41,6 +44,9 @@
 
     &.vortex .header {
         background-image: url('../../images/vortex-lrg.jpg');
+    }
+    &.todos .header {
+        background-image: url('../../images/todos.png');
     }
     
 
