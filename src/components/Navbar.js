@@ -40,7 +40,7 @@ const Navbar = ({isProject}) => {
                                 <>
                                     <li>
                                         <Link onClick={handleClick} className="ff-heading" to="case-studies" smooth="true">
-                                                Case Studies
+                                                Projects
                                         </Link>
                                     </li>
 

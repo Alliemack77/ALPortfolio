@@ -36,10 +36,10 @@ const Music = () => {
                             <SiGitlab /> 
                             <SiNetlify />  
                         </div>
-                        <div className="project-buttons flow-horiz-xs">
-                            <Button text="Website" href="https://thebeehivenetwork.netlify.app" target="_blank" />
-                            <Button text="Figma" href="https://www.figma.com/file/NiCxcjrkUTx5RQdsmV4PjS/Final-Project-Wireframe?node-id=144%3A879" target="_blank" />
-                            <Button text="GitLab" href="https://gitlab.com/dci-final-project/dci-final-project" target="_blank" />
+                        <div className="flow-xs flow-horiz-xs">
+                            <Button text="Website" href="https://thebeehivenetwork.netlify.app" target />
+                            <Button text="Figma" href="https://www.figma.com/file/NiCxcjrkUTx5RQdsmV4PjS/Final-Project-Wireframe?node-id=144%3A879"  target/>
+                            <Button text="GitLab" href="https://gitlab.com/dci-final-project/dci-final-project" target />
                         </div>
                 </main>
                 <ProjectNav href="/the-skate-shop" next="The Skate Shop"/>

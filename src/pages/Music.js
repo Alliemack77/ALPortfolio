@@ -27,17 +27,17 @@ const Music = () => {
                 </header>
                 <main className="description flex direction-column">
                         <h2 className="fs-800 ff-heading">The Project</h2>
-                        <p className="body fs-400">I created this project to challenge how quickly I could design, build and deploy a webpage. The concept was a landing page promoting online performances for a recording studio in downtown Nashville. This project took 10 days to complete and looking back I can spot some design flaws, but overall I think I was able to capture the spirit of this fictional hotspot.</p>
+                        <p className="body fs-400">My favorite part of frontend development is styling with Sass. A goal of the project was to build a landing page with a magazine type of layout. I wanted to build a page with mood, one that reflected a dark and smokey jazz club. I used CSS Grid to overlap page elements, properties like clip-path: polygon() to create vivid shapes, and a custom linear-gradient to move the eye along the page, almost like the strings of a guitar. The Music Shop, a fictitious recording studio in downtown Nashville, is a jazzy trip into the luscious underbelly of CSS.</p>
                         <div className="tech-icons flex">
                             <p>Tech stack:</p>
                             <DiSass /> 
                             <SiNetlify />  
                             <p className="ff-heading">Parcel</p>
                         </div>
-                        <div className="project-buttons flow-horiz-xs">
-                            <Button text="Website" href="https://themusicshop.netlify.app" target="_blank" />
-                            <Button text="Figma" href="https://www.figma.com/file/fC5k21fTR1orChA12w7XiX/Music-Sessions?node-id=5%3A0" target="_blank" />
-                            <Button text="Github" href="https://github.com/Alliemack77/TheMusicShop" target="_blank" />
+                        <div className="flow-xs flow-horiz-xs">
+                            <Button text="Website" href="https://themusicshop.netlify.app" target/>
+                            <Button text="Figma" href="https://www.figma.com/file/fC5k21fTR1orChA12w7XiX/Music-Sessions?node-id=5%3A0" target/>
+                            <Button text="Github" href="https://github.com/Alliemack77/TheMusicShop" target/>
                         </div>
                 </main>
                 <ProjectNav href="/the-beehive" next="The BeeHive"/>

@@ -27,17 +27,17 @@ const Skate = () => {
                 </header>
                 <main className="description flex direction-column">
                         <h2 className="fs-800 ff-heading">The Project</h2>
-                        <p className="body fs-400">My favorite way to learn is to try and emulate a really cool webiste. This was the first project where I designed in Figma first, then translated the design into code. I had so much fun building this landing page, eventhough I can see a lot of places where I've improved since then. However everytime I visit this page I can feel the ocean breeze in my hair while I zip amongst sun-soaked palm trees on my electric skateboard. </p>
+                        <p className="body fs-400">I love learning by doing. I designed this landing page to explore building layouts with Flexbox and a mobile first workflow. The result is a fully responsive site that works on a multitude of devices. I especially love the use of clamp() with font-size to create responsive typography.</p>
                         <div className="tech-icons flex">
                             <p>Tech stack:</p>
                             <DiHtml5 /> 
                             <SiCss3 /> 
                             <SiNetlify />  
                         </div>
-                        <div className="project-buttons flow-horiz-xs">
-                            <Button text="Website" href="https://theskateshop.netlify.app" target="_blank" />
-                            <Button text="Figma" href="https://www.figma.com/file/GkWAuuSnwxT0HRQBGtKu5E/The-Skate-Shop?node-id=0%3A1" target="_blank" />
-                            <Button text="GitHub" href="https://github.com/Alliemack77/The-Skate-Shop" target="_blank" />
+                        <div className="flow-xs flow-horiz-xs">
+                            <Button text="Website" href="https://theskateshop.netlify.app" target/>
+                            <Button text="Figma" href="https://www.figma.com/file/GkWAuuSnwxT0HRQBGtKu5E/The-Skate-Shop?node-id=0%3A1" target/>
+                            <Button text="GitHub" href="https://github.com/Alliemack77/The-Skate-Shop" target/>
                         </div>
                 </main>
                 <ProjectNav href="/your-daily-todos" next="Your Daily Todos"/>

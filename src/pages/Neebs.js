@@ -35,10 +35,10 @@ const Neebs = () => {
                             <DiSass /> 
                             <SiNetlify />  
                         </div>
-                        <div className="project-buttons flow-horiz-xs">
-                            <Button text="Website" href="https://neebsgaming.netlify.app"/>
-                            <Button text="Figma" href="https://www.figma.com/file/nJ5faYkdZJRgBsgfKy4bNf/Neebs-Gaming?node-id=0%3A1"/>
-                            <Button text="Github" href="https://github.com/Alliemack77/Neebs-Gaming"/>
+                        <div className="flow-xs flow-horiz-xs">
+                            <Button text="Website" href="https://neebsgaming.netlify.app" target/>
+                            <Button text="Figma" href="https://www.figma.com/file/nJ5faYkdZJRgBsgfKy4bNf/Neebs-Gaming?node-id=0%3A1" target/>
+                            <Button text="Github" href="https://github.com/Alliemack77/Neebs-Gaming" target/>
                         </div>
                 </main>
                 <ProjectNav href="/the-music-shop" next="The Music Shop"  />

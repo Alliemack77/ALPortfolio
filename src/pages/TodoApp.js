@@ -17,7 +17,7 @@ const TodoApp = () => {
                     <div className="role">
                         <p className="ff-heading uppercase fw-300">
                             <span className="text-orange fw-700">Role </span> 
-                            frontend</p>
+                            frontend development</p>
                         <p className="ff-heading uppercase fw-300">
                             <span className="text-orange fw-700">Context </span> 
                             project challenge</p>
@@ -28,17 +28,17 @@ const TodoApp = () => {
                 </header>
                 <main className="description flex direction-column">
                         <h2 className="fs-800 ff-heading">The Project</h2>
-                        <p className="body fs-400">Your Daily Todos is a solution to the Todo App challenge on Frontend Mentor. Frontend Mentor challenges help developers improve their frontend skills by building realistic projects. This is a responsive app that allows users to add, delete, and mark entries as complete. Users can also toggle dark mode and filter todos by their status. </p>
+                        <p className="body fs-400">Your Daily Todos is a solution to the Todo App challenge on Frontend Mentor. This is a fully responsive app built with React hooks and Sass. Users can add, delete, mark entries as complete, filter todos by status and clear all completed todos. The dark mode toggle was created using Sass mixins, lists and variables. I also used local storage to store user todos between page renders.</p>
                         <div className="tech-icons flex">
                             <p>Tech stack:</p>
                             <DiReact /> 
                             <DiSass /> 
                             <SiNetlify />
                         </div>
-                        <div className="project-buttons flow-horiz-xs">
-                            <Button text="Website" href="https://todaystasks.netlify.app/"/>
-                            <Button text="Challenge" href="https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW"/>
-                            <Button text="Github" href="https://github.com/Alliemack77/FEM-todo-app-challenge"/>
+                        <div className="flow-horiz-xs flow-xs">
+                            <Button text="Website" href="https://todaystasks.netlify.app/" target/>
+                            <Button text="Challenge" href="https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW" target/>
+                            <Button text="Github" href="https://github.com/Alliemack77/FEM-todo-app-challenge" target/>
                         </div>
                 </main>
                 <ProjectNav href="/the-vortex" next="The Vortex Project"  />

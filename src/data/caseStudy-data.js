@@ -3,7 +3,7 @@ import musicSmall from '../images/music-sm.jpg'
 import beehiveSmall from '../images/dev-group-sm.jpg'
 import skateSmall from '../images/skate-sm.jpg'
 import vortexSmall from '../images/vortex-sm.jpg'
-import todoApp from '../images/todos.png'
+import todoApp from '../images/todos-sm.jpg'
 
 
 export const caseStudies = [
