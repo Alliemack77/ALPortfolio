@@ -28,7 +28,7 @@ const CommentsApp = () => {
                 </header>
                 <main className="description flex direction-column">
                         <h2 className="fs-800 ff-heading">The Project</h2>
-                        <p className="body fs-400">This project is a solution to the Interactive Comments Section challenge on Frontend Mentor. This is a fully responsive component built with React and Sass. I chose this challenge to test my React knowledge while learning how to build a very common web component. Users can post, edit, reply and delete comments. I learned accessability best practices for buttons without text, making this commponent keyboard navigation and screen reader friendly. </p>
+                        <p className="body fs-400">This project is a solution to the Interactive Comments Section challenge on Frontend Mentor. This is a fully responsive component built with React and Sass. Users can post, edit, up/downvote, reply to and delete comments. I learned how to build a custom hook that allows for rendering elements based on the viewport size. I also learned accessability best practices for buttons without text, making this commponent keyboard navigation and screen reader friendly. </p>
                         <div className="tech-icons flex">
                             <p>Tech stack:</p>
                             <DiReact /> 
