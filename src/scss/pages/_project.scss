@@ -25,6 +25,9 @@
     &.todos .description {
         background-color: $clr-concord;
     }
+    &.comments .description {
+        background-color: $clr-something;
+    }
 
     &.neebs .header {
         background-image: url('../../images/ark-lrg.jpg');
@@ -47,6 +50,9 @@
     }
     &.todos .header {
         background-image: url('../../images/todos-lrg.jpg');
+    }
+    &.comments .header {
+        background-image: url('../../images/comments-lrg.jpg');
     }
     
 
