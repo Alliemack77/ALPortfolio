@@ -4,17 +4,17 @@ import beehiveSmall from '../images/dev-group-sm.jpg'
 import skateSmall from '../images/skate-sm.jpg'
 import vortexSmall from '../images/vortex-sm.jpg'
 import todoApp from '../images/todos-sm.jpg'
-import commentsApp from '../images/comments-sm.jpg';
+// import commentsApp from '../images/comments-sm.jpg';
 
 
 export const caseStudies = [
-    {
-        name: "comments",
-        title: "Comments Section",
-        subtitle: "A Frontend Mentor Challenge",
-        imgSmall: commentsApp,
-        href: "/interactive-comments-section"
-    },
+    // {
+    //     name: "comments",
+    //     title: "Comments Section",
+    //     subtitle: "A Frontend Mentor Challenge",
+    //     imgSmall: commentsApp,
+    //     href: "/interactive-comments-section"
+    // },
     {
         name: "todos",
         title: "Your Daily Todos",
