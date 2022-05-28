@@ -5,7 +5,7 @@ import BeeHive from './pages/BeeHive'
 import Skate from './pages/Skate'
 import Vortex from './pages/Vortex'
 import TodoApp from './pages/TodoApp'
-// import CommentsApp from './pages/CommentsApp'
+import CommentsApp from './pages/CommentsApp'
 import Home from './pages/Home'
 import './scss/main.scss'
 
@@ -20,7 +20,7 @@ function App() {
         <Route path="/the-skate-shop" element={<Skate/>}></Route>
         <Route path="/the-vortex" element={<Vortex/>}></Route>
         <Route path="/your-daily-todos" element={<TodoApp/>}></Route>
-        {/* <Route path="/interactive-comments-section" element={<CommentsApp/>}></Route> */}
+        <Route path="/interactive-comments-section" element={<CommentsApp/>}></Route>
       </Routes>
     </Router>
 

@@ -1,8 +1,6 @@
 @use '../abstracts/colors' as *;
 
 .card {
-    // border: solid purple 2px;
-    // max-width: 500px;
     padding: 2rem clamp(2rem, 3vw, 6rem);
     background: $clr-white;
     box-shadow: 0 20px 60px 0 rgb(26 27 38 / 15%);
@@ -21,7 +19,8 @@
         transition: transform 550ms;
     }
 
-    &:hover::after {
+    &:hover::after, 
+    &:focus-within::after {
         transform: scale(1, 1);
     }
 
