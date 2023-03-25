@@ -6,6 +6,7 @@ import Skate from './pages/Skate'
 import Vortex from './pages/Vortex'
 import TodoApp from './pages/TodoApp'
 import CommentsApp from './pages/CommentsApp'
+import GithubSearchApp from './pages/GithubSearchApp';
 import Home from './pages/Home'
 import './scss/main.scss'
 
@@ -21,6 +22,7 @@ function App() {
         <Route path="/the-vortex" element={<Vortex/>}></Route>
         <Route path="/your-daily-todos" element={<TodoApp/>}></Route>
         <Route path="/interactive-comments-section" element={<CommentsApp/>}></Route>
+        <Route path="/github-user-search" element={<GithubSearchApp/>}></Route>
       </Routes>
     </Router>
 

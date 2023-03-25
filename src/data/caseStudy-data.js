@@ -5,9 +5,17 @@ import skateSmall from '../images/skate-sm.jpg'
 import vortexSmall from '../images/vortex-sm.jpg'
 import todoApp from '../images/todos-sm.jpg'
 import commentsApp from '../images/comments-sm.jpg';
+import gitHubSearchApp from '../images/github-search.png';
 
 
 export const caseStudies = [
+    {
+        name: "github",
+        title: "GitHub User Search",
+        subtitle: "A Frontend Mentor Challenge",
+        imgSmall: gitHubSearchApp,
+        href: "/github-user-search"
+    },
     {
         name: "comments",
         title: "Comments Section",

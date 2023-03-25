@@ -26,7 +26,10 @@
         background-color: $clr-concord;
     }
     &.comments .description {
-        background-color: $clr-something;
+        background-color: $clr-navy;
+    }
+    &.github .description {
+        background-color: $clr-azure;
     }
 
     &.neebs .header {
@@ -54,6 +57,13 @@
     &.comments .header {
         background-image: url('../../images/comments-lrg.jpg');
     }
+    &.github .header {
+        background-image: url('../../images/github-search-75.jpg');
+        background-position: center;
+        background-size: unset;
+        background-color: $clr-azure;
+    }
+
     
 
     .header {

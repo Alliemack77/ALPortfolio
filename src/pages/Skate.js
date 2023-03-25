@@ -40,8 +40,7 @@ const Skate = () => {
                             <Button text="GitHub" href="https://github.com/Alliemack77/The-Skate-Shop" target/>
                         </div>
                 </main>
-                <ProjectNav href="/interactive-comments-section" next="Interactive Comments"/>
-                {/* <ProjectNav href="/your-daily-todos" next="Your Daily Todos"/> */}
+                <ProjectNav href="/github-user-search" next="GitHub User Search"/>
                 <Footer />
             </div>
         </>
