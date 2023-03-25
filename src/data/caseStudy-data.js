@@ -5,7 +5,7 @@ import skateSmall from '../images/skate-sm.jpg'
 import vortexSmall from '../images/vortex-sm.jpg'
 import todoApp from '../images/todos-sm.jpg'
 import commentsApp from '../images/comments-sm.jpg';
-import gitHubSearchApp from '../images/github-search.png';
+import gitHubSearchApp from '../images/github-search-75.jpg';
 
 
 export const caseStudies = [
