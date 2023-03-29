@@ -31,6 +31,9 @@
     &.github .description {
         background-color: $clr-azure;
     }
+    &.github .staff-listing {
+        background-color: $clr-azure;
+    }
 
     &.neebs .header {
         background-image: url('../../images/ark-lrg.jpg');
@@ -63,6 +66,13 @@
         background-size: unset;
         background-color: $clr-azure;
     }
+    &.staff-listing .header {
+        background-image: url('../../images/staff-listing-75.jpg');
+        background-position: 25% 25%;
+        background-size: contain;
+        // background-color: $clr-azure;
+    }
+
 
     
 

@@ -6,27 +6,35 @@ import vortexSmall from '../images/vortex-sm.jpg'
 import todoApp from '../images/todos-sm.jpg'
 import commentsApp from '../images/comments-sm.jpg';
 import gitHubSearchApp from '../images/github-search-75.jpg';
+import staffListing from '../images/staff-listing-75.jpg';
 
 
 export const caseStudies = [
     {
+        name: "staff-listing",
+        title: "Staff Listing",
+        subtitle: "A flexible component using container queries",
+        imgSmall: staffListing,
+        href: "/staff-listing"
+    },
+    {
         name: "github",
         title: "GitHub User Search",
-        subtitle: "A Frontend Mentor Challenge",
+        subtitle: "A Frontend Mentor challenge",
         imgSmall: gitHubSearchApp,
         href: "/github-user-search"
     },
     {
         name: "comments",
         title: "Comments Section",
-        subtitle: "A Frontend Mentor Challenge",
+        subtitle: "A Frontend Mentor challenge",
         imgSmall: commentsApp,
         href: "/interactive-comments-section"
     },
     {
         name: "todos",
         title: "Your Daily Todos",
-        subtitle: "A Frontend Mentor Challenge",
+        subtitle: "A Frontend Mentor challenge",
         imgSmall: todoApp,
         href: "/your-daily-todos"
     },
