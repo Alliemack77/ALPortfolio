@@ -12,7 +12,7 @@ const Skate = () => {
             <div className="project skate">
                 <header className="header grid">
                     <h1 className="title fs-900 fw-700 ff-heading">The Skate Shop</h1>
-                    <p className="subtitle fs-500">An exploration of layout</p>
+                    <p className="subtitle fs-500">An Exploration of Layout</p>
                     <div className="role">
                         <p className="ff-heading uppercase fw-300">
                             <span className="text-orange fw-700">Role </span> 

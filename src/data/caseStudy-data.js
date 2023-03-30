@@ -55,7 +55,7 @@ export const caseStudies = [
     {
         name: "music",
         title: "The Music Shop",
-        subtitle: "An exploration of css properties",
+        subtitle: "An exploration of sass and netlify",
         imgSmall: musicSmall,
         href: "/the-music-shop"
     },

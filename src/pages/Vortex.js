@@ -15,7 +15,7 @@ const Vortex = () => {
             <div className="project vortex">
                 <header className="header grid">
                     <h1 className="title fs-900 fw-700 ff-heading">The Vortex Project</h1>
-                    <p className="subtitle fs-500">The ultimate Doctor Who experiance</p>
+                    <p className="subtitle fs-500">The Ultimate Doctor Who Experiance</p>
                     <div className="role">
                         <p className="ff-heading uppercase fw-300">
                             <span className="text-orange fw-700">Role </span> 

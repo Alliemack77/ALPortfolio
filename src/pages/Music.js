@@ -12,7 +12,7 @@ const Music = () => {
             <div className="project music">
                 <header className="header grid">
                     <h1 className="title fs-900 fw-700 ff-heading">The Music Shop</h1>
-                    <p className="subtitle fs-500">Having fun with Sass and Netlify</p>
+                    <p className="subtitle fs-500">An Exploration of Sass and Netlify</p>
                     <div className="role">
                         <p className="ff-heading uppercase fw-300">
                             <span className="text-orange fw-700">Role </span> 

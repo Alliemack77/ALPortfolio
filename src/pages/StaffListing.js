@@ -14,7 +14,7 @@ const StaffListing = () => {
             <div className="project staff-listing">
                 <header className="header grid">
                     <h1 className="title fs-900 fw-700 ff-heading">Staff Listing</h1>
-                    <p className="subtitle fs-500">A Flexible Component using Container Queries</p>
+                    <p className="subtitle fs-500">A Flexible Component Using Container Queries</p>
                     <div className="role">
                         <p className="ff-heading uppercase fw-300">
                             <span className="text-orange fw-700">Role </span> 

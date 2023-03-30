@@ -12,7 +12,7 @@ const Music = () => {
             <div className="project beehive">
                 <header className="header grid">
                     <h1 className="title fs-900 fw-700 ff-heading">The BeeHive</h1>
-                    <p className="subtitle fs-500">A project for inclusion</p>
+                    <p className="subtitle fs-500">A Project for Inclusion</p>
                     <div className="role">
                         <p className="ff-heading uppercase fw-300">
                             <span className="text-orange fw-700">Role </span> 
