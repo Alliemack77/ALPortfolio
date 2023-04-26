@@ -31,8 +31,12 @@
     &.github .description {
         background-color: $clr-azure;
     }
-    &.github .staff-listing {
+    &.staff-listing .description {
         background-color: $clr-azure;
+    }
+
+    &.dictionary .description {
+        background-color: $clr-plum;
     }
 
     &.neebs .header {
@@ -70,11 +74,22 @@
         background-image: url('../../images/staff-listing.jpg');
         background-position: 50% 67%;
         background-size: unset;
-        // background-color: $clr-azure;
+        background-color: $clr-azure;
+
+    }
+    &.dictionary .header {
+        background-image: url('../../images/dictionary.jpg');
+        background-position: 50% 75%;
+        background-size: contain;
+        background-color: $clr-plum;
     }
 
-
-    
+    @media (min-width: 500px) {
+        &.dictionary .header {
+            // background-position: 50% 90%;
+            background-size: unset;
+        }
+    }
 
     .header {
         gap: 0;

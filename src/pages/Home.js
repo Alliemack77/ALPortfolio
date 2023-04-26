@@ -37,7 +37,7 @@ const Home = () => {
             <div id="case-studies" className="container">
                 <section className="case-studies">
                     <header className="secondary-header">
-                        <h2 className="title text-dark-blue fs-400 fw-700 uppercase">Case Studies</h2>
+                        <h2 className="title text-dark-blue fs-400 fw-700 uppercase">Projects</h2>
                         <p className="text-dark-blue ff-heading fs-700 fw-500">Latest Work</p>
                     </header>
                     <div className="tiles">

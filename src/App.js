@@ -8,6 +8,7 @@ import TodoApp from './pages/TodoApp'
 import CommentsApp from './pages/CommentsApp'
 import GithubSearchApp from './pages/GithubSearchApp';
 import StaffListing from './pages/StaffListing';
+import Dictionary from './pages/Dictionary';
 import Home from './pages/Home'
 import './scss/main.scss'
 
@@ -25,6 +26,7 @@ function App() {
         <Route path="/interactive-comments-section" element={<CommentsApp/>}></Route>
         <Route path="/github-user-search" element={<GithubSearchApp/>}></Route>
         <Route path="/staff-listing" element={<StaffListing/>}></Route>
+        <Route path="/dictionary" element={<Dictionary/>}></Route>
       </Routes>
     </Router>
 

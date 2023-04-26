@@ -7,9 +7,17 @@ import todoApp from '../images/todos-sm.jpg'
 import commentsApp from '../images/comments-sm.jpg';
 import gitHubSearchApp from '../images/github-search-75.jpg';
 import staffListing from '../images/staff-listing-75.jpg';
+import dictionary from '../images/dictionary.jpg';
 
 
 export const caseStudies = [
+    {
+        name: "dictionary",
+        title: "Dictionary App",
+        subtitle: "A Frontend Mentor challenge",
+        imgSmall: dictionary,
+        href: "/dictionary"
+    },
     {
         name: "staff-listing",
         title: "Staff Listing",
