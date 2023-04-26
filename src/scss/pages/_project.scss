@@ -32,7 +32,7 @@
         background-color: $clr-azure;
     }
     &.staff-listing .description {
-        background-color: $clr-azure;
+        background-color: $clr-moss;
     }
 
     &.dictionary .description {
@@ -74,7 +74,7 @@
         background-image: url('../../images/staff-listing.jpg');
         background-position: 50% 67%;
         background-size: unset;
-        background-color: $clr-azure;
+        background-color: $clr-moss;
 
     }
     &.dictionary .header {
@@ -86,7 +86,6 @@
 
     @media (min-width: 500px) {
         &.dictionary .header {
-            // background-position: 50% 90%;
             background-size: unset;
         }
     }
